@@ -65,3 +65,11 @@ button {
 }
 
 a,button,label {cursor: pointer;}
+caption {
+	position: absolute!important;
+	top: auto;
+	left: -10000px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}

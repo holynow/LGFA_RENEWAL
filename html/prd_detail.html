@@ -6,118 +6,79 @@
         <title>LGFA | 상세페이지</title>
         <link rel="stylesheet" href="/css/common.css"/>
         <link rel="stylesheet" href="/css/ui.css"/>
+        <!-- include -->
+        <script src="/js/include.js"></script>
     </head>
     <body>
         <div class="wrap">
             <!-- header -->
-            <header class="header">
-                <div class="header-top">
-                    <a href="#none" class="comp-logo">
-                        <h1><img src="/img/common/img-logo.png" alt="엘티일렉트릭(주)"></h1>
-                    </a>
-                    <div class="header-menu">
-                        <div class="search-wrap">
-                            <span class="ico-search"></span>
-                            <input type="text" class="search-bar" placeholder="검색어를 입력하세요.">
-                        </div>
-                        <label for="moreBtn" class="link-more-btn"><span class=""></span></label>
-                        <input type="checkbox" id="moreBtn"></input>
-                        <div class="header-link">
-                            <a href="/html/member/login.html">로그인</a>
-                            <a href="/html/member/join.html">회원가입</a>
-                            <a href="/html/member/cart.html">장바구니</a>
-                            <a href="#none" class="btn-round-green-h40">견적문의</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- nav -->
-                <nav class="nav-wrap">
-                    <div class="global-nav">
-                        <ul>
-                            <li>
-                                <a href="/html/about/company.html">
-                                    <img src="/img/common/ico-global-nav01.png" alt="">
-                                    <p>회사소개</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/html/about/dataroom.html">
-                                    <img src="/img/common/ico-global-nav02.png" alt="">
-                                    <p>자료실</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#none">
-                                    <img src="/img/common/ico-global-nav03.png" alt="">
-                                    <p>단가자료</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#none">
-                                    <img src="/img/common/ico-global-nav04.png" alt="">
-                                    <p>응용도면</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/html/about/customer.html">
-                                    <img src="/img/common/ico-global-nav04.png" alt="">
-                                    <p>고객센터</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub-nav">
-                        <ul>
-                            <li class="all-menu">
-                                <a href="#none">전체품목</a>
-                            </li>
-                            <li>
-                                <a href="#none">저고압기기</a>
-                            </li>
-                            <li>
-                                <a href="#none">인버터</a>
-                            </li>
-                            <li>
-                                <a href="#none">PLC</a>
-                            </li>
-                            <li>
-                                <a href="#none">Servo / Motion</a>
-                            </li>
-                            <li>
-                                <a href="#none">태양광인버터 EV Realay</a>
-                            </li>
-                            <li>
-                                <a href="#none">HMI</a>
-                            </li>
-                            <li>
-                                <a href="#none">계량기기</a>
-                            </li>
-                            <li>
-                                <a href="#none">계전 · 계측기기</a>
-                            </li>
-                            <li>
-                                <a href="#none">한국자동제어 KACON</a>
-                            </li>
-                            <li>
-                                <a href="#none">제어기기 LGFA</a>
-                            </li>
-                            <li>
-                                <a href="#none">기타기기</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- mo nav -->
-            </header>
+            <script>include.header()</script>
             <!-- content-wrap -->
             <div class="content-wrap">
                 <div class="content">
                     <div class="path-wrap"></div>
-                    <!-- detail content -->
-                    <div class="detail-wrap">
+                    <!-- product detail content -->
+                    <div class="prd-wrap">
                         <div class="inner-wrap">
                             <div class="tit-wrap">
                                 <h2>저고압기기 / 배선용차단기(MCCB)</h2>
+                            </div>
+                            <div class="prd-top">
+                                <div class="prd-img">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="prd-info">
+                                    <p class="name"></p>
+                                    <dl>    
+                                        <dt>제조사</dt>
+                                        <dd></dd>
+                                    </dl>
+                                    <dl>    
+                                        <dt>상품코드</dt>
+                                        <dd>0000002386</dd>
+                                    </dl>
+                                    <dl>    
+                                        <dt>판매가격</dt>
+                                        <dd>전화문의 (031-433-0900)</dd>
+                                    </dl>
+                                    <dl>    
+                                        <dt>옵션상품</dt>
+                                        <dd>
+                                            <select name="option" id="option">
+                                                <option value="">옵션상품 선택</option>
+                                                <option value="옵션1">옵션1</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                    <dl>    
+                                        <dt>수량</dt>
+                                        <dd>
+                                            <div class="number">
+                                                <button type="button">-</button>
+                                                <span class="num-chk"></span>
+                                                <button type="button">+</button>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <p class="amount redtxt">전화문의</p>
+                                    <div class="purchase-btn-group">
+                                        <a href="#none"><i class="ico-basket"></i>장바구니 담기</a>
+                                        <a href="#none">구매하기</a>
+                                    </div>
+                                    <div class="download-btn-group">
+                                        <a href="#none"><i class="ico-download" download></i>카탈로그</a>
+                                        <a href="#none"><i class="ico-download" download></i>사용설명서</a>
+                                        <a href="#none"><i class="ico-download" download></i>도면</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prd-detail">
+                                <div class="detail-top">
+                                    <p>제품상세</p>
+                                </div>
+                                <div class="div detail-img">
+                                    <img src="" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
