@@ -104,9 +104,9 @@
 
 /* search box */
 .select-group {display: flex; align-items: center; justify-content: space-between; gap: 1em;}
-.select-group select {width: 100%; border-radius: 10px; height: 45px; padding: 0 12px;}
-.search-area {display: flex; gap: 1em;}
-.search-area select {min-width: 10em; border-radius: 10px; padding: 0 12px; background: #555; color: #fff;}
+.select-group select {width: 100%; border-radius: 10px; height: 45px; padding: 0 12px; background-image: url('/img/common/ico-arrow-down.png'); background-repeat: no-repeat; background-position: calc(100% - 10px); background-size: 15px; }
+.search-area {display: flex; gap: 1em; }
+.search-area select {min-width: 10em; border-radius: 10px; padding: 0 12px; background: #555; color: #fff; background-image: url('/img/common/ico-arrow-down-wht.png'); background-repeat: no-repeat; background-position: calc(100% - 10px); background-size: 15px;} 
 .select-group + .search-area  {margin-top: 1em;}
 
 /* tb-list-wrap */
@@ -146,7 +146,7 @@ footer {padding: 10em; background: #273A5F;}
     .tb-list-wrap {overflow-x: auto;}
     .tb-list-wrap table {width: 800px;}
     .tb-list-wrap table th,
-    .tb-list-wrap table td {padding: 15px 0; font-size: .8rem;}
+    .tb-list-wrap table td {padding: 15px 0;}
 
 }
 /* 500 */

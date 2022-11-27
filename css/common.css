@@ -74,4 +74,4 @@ caption {
 	overflow: hidden;
 }
 
-select {border: 0; background: #fff;}
+select {border: 0; background: #fff; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
