@@ -1,7 +1,7 @@
 /* ui */
 @charset "utf-8";
-
-.wrap {position: relative; overflow: hidden;}
+img {width: 100%;}
+.wrap {position: relative;}
 .inner-wrap {width: 100%; max-width: 1320px; margin: 0 auto; padding: 5em 20px 13em;}
 
 /* txt align */
@@ -10,10 +10,13 @@
 
 /* btn */
 .btn-wrap {display: flex; align-items: center; gap: .7em; margin-top: 2em;} 
+.btn-wrap.w100 [class^="btn"] {width: 100%; font-size: 1.2rem;}
 .btn-wrap.right {justify-content: flex-end;}
-.btn-wrap [class^="btn"] {min-width: 9em; height: 3.5em; border-radius: 3px; border: 1px solid #999; color: #555; font-size: 1.1rem;} 
+.btn-wrap [class^="btn"] {min-width: 9em; height: 3.5em; padding: 0 1em; line-height: 3.5em; border-radius: 3px; border: 1px solid #999; color: #555; font-size: 1.1rem;} 
 [class^="btn"] {min-width: 100px; font-weight: 500; text-align: center; transition: all .1s ease-in-out;}
 [class^="btn"][class*="round"] {border-radius: 30px;}
+[class^="btn"][class*="gry"] {background: #46B161; border: transparent; color: #fff;}
+[class^="btn"][class*="grn"] {background: #555; border: transparent; color: #fff;}
 [class^="btn"][class*="gray"] {background: #ddd; border: transparent;}
 [class^="btn"][class*="green"] {border: 1px solid #46B161; color: #46B161;}
 [class^="btn"][class*="green"]:hover {background: #46B161; color: #fff;}
@@ -51,6 +54,7 @@
 .nav-wrap .global-nav ul li {margin: 0 auto; width: 5em; text-align: center;}
 .nav-wrap .global-nav ul li p {margin-top: .7em; font-size: 1.2rem;}
 .nav-wrap .global-nav ul li img {width: 100%;}
+.nav-wrap .sub-nav {width: 100%; background: #fff;}
 .nav-wrap .sub-nav ul {display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, auto)); border-top: 1px solid #ddd;}
 .nav-wrap .sub-nav ul li {text-align: center; border-bottom: 1px solid #ddd; border-right: 1px solid#ddd;}
 .nav-wrap .sub-nav ul li a {display: block; padding: 1em 0; font-weight: 500;}
@@ -61,6 +65,9 @@
 .tit-wrap h1 {font-size: 2.5rem;}
 .sub-tit h2 {font-size: 1.5rem; color: #999; font-weight: 400;}
 .tit-wrap + .sub-tit {margin: 1em 0 0 0;}
+
+/* main */
+
 
 /* category */
 .cate-tit {display: flex; align-items: center; gap: .5em;}
@@ -82,6 +89,28 @@
 .list-paging ul li button,
 .list-paging ul li a {display: block; width: 2.5em; height: 2.5em; line-height: 2.5em; font-size: 16px; color: #999;}
 .list-paging ul li.active a {color: #fff; font-weight: 500; background: #273A5F;}
+
+/* prd detail */
+.prd-top {display: flex; gap: 10em; margin-top: 3em;}
+.prd-top > div {flex: 1;}
+.prd-top .prd-img {max-width: 600px; width: 100%; overflow: hidden;}
+.prd-top .prd-img img {width: 100%;}
+.prd-top .prd-info .name {margin-bottom: 1.5em; font-size: 2rem; font-weight: 500;}
+.prd-top .prd-info dl {display: flex; justify-content: space-between; align-items: center; margin-top: 2em; gap: 2em;}
+.prd-top .prd-info dl dt {font-size: 1.2rem; color: #999;}
+.prd-top .prd-info dl dd {flex: 1; width: 50%; text-align: right; font-size: 1.2rem; color: #222;}
+.prd-top .prd-info .input-area select {border: 1px solid #ddd;}
+.prd-top .prd-info .input-area .num-chk .num {padding: 0 1em; font-size: 2rem; font-weight: 500;}
+.prd-top .prd-info .input-area .num-chk button {padding: .5em; font-size: 2rem;}
+.prd-top .amount {margin-top: 2em; font-size: 2rem; text-align: right; font-weight: 500;}
+.prd-top .amount.redtxt {color: #D62727;}
+.prd-detail .detail-top {margin-top: 2em; padding: 0 2em; height: 60px; background: #f7f7f7; border-radius: 10px;}
+.prd-detail .detail-top p {line-height: 60px; font-weight: 500; font-size: 1.2rem;}
+.prd-detail .detail-img {padding: 4em;}
+.prd-detail .detail-img img {width: 100%;}
+.download-btn-group {display: flex; align-items: center; justify-content: space-between; gap: 1em; margin-top: 1em;}
+.download-btn-group a {display: block; width: 100%; height: 45px; line-height: 45px; text-align: center; border: 1px solid #999; border-radius: 3px; font-size: 1.1rem; font-weight: 500;}
+.ico-download {content: ''; display: inline-block; width: 15px; height: 15px; margin-right: .5em; background: url('/img/common/ico-download.png')no-repeat center; background-size: 100%; vertical-align: -2px;}
 
 /* list detail */
 .list-detail {margin: 5em 0 0 0;}
@@ -107,21 +136,44 @@
 .select-group select {width: 100%; border-radius: 10px; height: 45px; padding: 0 12px; background-image: url('/img/common/ico-arrow-down.png'); background-repeat: no-repeat; background-position: calc(100% - 10px); background-size: 15px; }
 .search-area {display: flex; gap: 1em; }
 .search-area select {min-width: 10em; border-radius: 10px; padding: 0 12px; background: #555; color: #fff; background-image: url('/img/common/ico-arrow-down-wht.png'); background-repeat: no-repeat; background-position: calc(100% - 10px); background-size: 15px;} 
+.search-area select option {background: #fff;}
 .select-group + .search-area  {margin-top: 1em;}
 
 /* tb-list-wrap */
 .tb-list-wrap {margin-top: 4em;}
 .tb-list-wrap table {width: 100%;}
 .tb-list-wrap table th,
-.tb-list-wrap table td {padding: 20px 10px; text-align: center; font-size: 1.1rem; vertical-align: middle;}
+.tb-list-wrap table td a,
+.tb-list-wrap table td {padding: 12px 10px; text-align: center; font-size: 1.2rem; vertical-align: middle;}
+.tb-list-wrap table td a {font-weight: 500;}
 .tb-list-wrap table tr {border-top: 1px solid #eee;}
 .tb-list-wrap table tr:nth-child(1) {border-top: transparent;}
 .tb-list-wrap table th {border-bottom: 1px solid #222;}
 .ico-attach {content: ''; display: block; width: 25px; height: 25px; margin: 0 auto; background: url('/img/common/ico-attach.png')no-repeat center; background-size: contain; text-align: center;}
 
+/* tab */
+.tit-wrap + .tab-btn-wrap {margin-top: 4em;}
+.tab-btn-wrap {display: flex; justify-content: space-between; align-items: center;}
+.tab-btn-wrap li {width: 100%; text-align: center;}
+.tab-btn-wrap li a {display: block; width: 100%; padding: 1em; border: 1px solid #ddd; border-collapse: collapse;}
+.tab-btn-wrap li.active a {background: #46B161; color: #fff;}
 
-/* footer */
-footer {padding: 10em; background: #273A5F;}
+/* accord-wrap */
+.accord-wrap {border-top: 2px solid #222;}
+.accord-wrap .item {width: 100%;}
+.accord-wrap .item ~ .item {border-top: 1px solid #ddd;}
+.accord-wrap .item button {display: block; width: 100%;}
+.accord-wrap .reply,
+.accord-wrap .ask {display: flex; align-items: center; width: 100%; padding: 1.5em 1em;}
+.accord-wrap .ask em {color: #555;}
+.accord-wrap .ask .date {margin-left: auto;}
+.accord-wrap .reply .reply-cont,
+.accord-wrap .ask .accord-tit {margin-left: 3rem; font-size: 1.2rem; font-weight: 500;}
+.accord-wrap .reply {padding: 2em 1em; background: #f7f7f7;}
+.accord-wrap .reply em {color: #46B161;}
+.accord-wrap .reply .prd {color: #555; font-weight: 500; font-size: 1rem;}
+.accord-wrap .reply .prd span {margin-left: 1em; font-size: 1rem; font-weight: 500;}
+.accord-wrap .reply .cont {margin-top: .6em; font-size: 1.1rem; font-weight: 400;}
 
 /* media query */
 /* 1100px */
@@ -133,6 +185,8 @@ footer {padding: 10em; background: #273A5F;}
     .header .header-menu .header-link {display: none;}
     .header .header-menu .link-more-btn + input:checked + .header-link {display: flex; flex-direction: column; gap: 1em; position: absolute; top: 70px; right: 10px; padding: 1em; background: #fff; border: 1px solid #ddd; z-index: 1;}
     .header .header-menu .link-more-btn + input:checked + .header-link [class^="btn"] {border: none; height: auto; line-height: unset;}
+    .prd-top {gap: 3em;}
+    .prd-detail .detail-img {padding: 0;}
 }
 /* 768px */
 @media (max-width: 768px) {
@@ -140,6 +194,7 @@ footer {padding: 10em; background: #273A5F;}
     .header .header-menu .header-link a {font-size: 1.2rem;}
     .nav-wrap .global-nav ul {gap: 2em 1em; grid-template-columns: repeat(3, 1fr);}
     .nav-wrap .global-nav ul li img {filter: grayscale(0); opacity: 1;}
+    .prd-top {flex-direction: column;}
 }
 /* 600 */
 @media (max-width: 600px) {
@@ -169,4 +224,8 @@ footer {padding: 10em; background: #273A5F;}
     .tit-wrap h1 {font-size: 2rem;}
     .sub-tit h2 {font-size: 1.3rem; color: #999; font-weight: 400;}
     .tit-wrap + .sub-tit {margin: .8em 0 0 0;}
+    .prd-top .amount {margin-top: 1em;}
+    .prd-top .amount + .btn-wrap {margin-top: 3em;}
+    .download-btn-group {gap: .6em;}
+    .download-btn-group a {font-size: .9rem;}
 }

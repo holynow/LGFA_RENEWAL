@@ -4,7 +4,7 @@ const include = {
     header: () => {
         document.write('<header class="header">');
         document.write('<div class="header-top">');
-        document.write('<a href="#none" class="comp-logo">');
+        document.write('<a href="/index.html" class="comp-logo">');
         document.write('<h1><img src="/img/common/img-logo.png" alt="엘티일렉트릭(주)"></h1>');
         document.write('</a>');
         document.write('<div class="header-menu">');
@@ -27,13 +27,13 @@ const include = {
         document.write('<div class="global-nav">');
         document.write('<ul>');
         document.write('<li>');
-        document.write('<a href="/html/about/company.html">');
+        document.write('<a href="#none">');
         document.write('<img src="/img/common/ico-global-nav01.png" alt="">');
         document.write('<p>회사소개</p>');
         document.write('</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="/html/about/dataroom.html">');
+        document.write('<a href="/html/data/data_room.html">');
         document.write('<img src="/img/common/ico-global-nav02.png" alt="">');
         document.write('<p>자료실</p>');
         document.write('</a>');
@@ -51,7 +51,7 @@ const include = {
         document.write('</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="/html/about/customer.html">');
+        document.write('<a href="/html/customer/faq.html">');
         document.write('<img src="/img/common/ico-global-nav04.png" alt="">');
         document.write('<p>고객센터</p>');
         document.write('</a>');
@@ -64,37 +64,37 @@ const include = {
         document.write('<a href="#none">전체품목</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">저고압기기</a>');
+        document.write('<a href="/html/shop/category.html">저고압기기</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">인버터</a>');
+        document.write('<a href="/html/shop/category.html">인버터</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">PLC</a>');
+        document.write('<a href="/html/shop/category.html">PLC</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">Servo / Motion</a>');
+        document.write('<a href="/html/shop/category.html">Servo / Motion</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">태양광인버터 EV Realay</a>');
+        document.write('<a href="/html/shop/category.html">태양광인버터 EV Realay</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">HMI</a>');
+        document.write('<a href="/html/shop/category.html">HMI</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">계량기기</a>');
+        document.write('<a href="/html/shop/category.html">계량기기</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">계전 · 계측기기</a>');
+        document.write('<a href="/html/shop/category.html">계전 · 계측기기</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">한국자동제어 KACON</a>');
+        document.write('<a href="/html/shop/category.html">한국자동제어 KACON</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">제어기기 LGFA</a>');
+        document.write('<a href="/html/shop/category.html">제어기기 LGFA</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">기타기기</a>');
+        document.write('<a href="/html/shop/category.html">기타기기</a>');
         document.write('</li>');
         document.write('</ul>');
         document.write('</div>');
@@ -102,7 +102,18 @@ const include = {
         document.write('<!-- mo nav -->');
         document.write('</header>');
     },
-    footer: () => {
+    style: () => {
 
+    },
+    script: () => {
+        document.write('<script src="https://code.jquery.com/jquery-3.6.1.min.js" defer></script>')
+        document.write('<script src="/js/ui.js" defer></script>')
+    },
+    footer: () => {
+        document.write('<footer>')
+        document.write('<div>')
+        document.write('<img src="/img/dummy/main_dummy_footer.png" alt="">')
+        document.write('</div>')
+        document.write('</footer>')
     }
 };

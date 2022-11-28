@@ -1,0 +1,127 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>LGFA | customer - Q&A</title>
+        <link rel="stylesheet" href="/css/common.css"/>
+        <link rel="stylesheet" href="/css/ui.css"/>
+        <!-- include -->
+        <script src="/js/include.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- header -->
+            <script>include.header()</script>
+            <!-- content-wrap -->
+            <div class="content-wrap">
+                <div class="content">
+                    <div class="path-wrap"></div>
+                    <div class="inner-wrap">
+                        <div class="tit-wrap txt-c">
+                            <h1>Q&A</h1>
+                        </div>
+                        <ul class="tab-btn-wrap">
+                            <li>
+                                <a href="/html/customer/faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="/html/customer/notice.html">공지사항</a>
+                            </li>
+                            <li class="active">
+                                <a href="/html/customer/qna.html">Q&A</a>
+                            </li>
+                            <li>
+                                <a href="#none">견적문의</a>
+                            </li>
+                        </ul>
+                        <div class="inner-box bg-color-ee">
+                            <div class="search-area">
+                                <select name="condition" id="condition">
+                                    <option value="제목">제목</option>
+                                    <option value="내용">내용</option>
+                                    <option value="작성자">작성자</option>
+                                </select>
+                                <div class="search-wrap">
+                                    <span class="ico-search"></span>
+                                    <input type="text" class="search-bar" placeholder="검색어 입력">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tb-list-wrap">
+                            <table style="width:100%;">
+                                <caption>Q&A 리스트(번호, 작성자, 상ㅏ내용, 조회수, 등록일)를 나타내는 테이블입니다.</caption>
+                                <colgroup>
+                                    <col width="5%">
+                                    <col width="15%">
+                                    <col width="auto">
+                                    <col width="5%">
+                                    <col width="15%">
+                                    <col width="10%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">작성자</th>
+                                        <th scope="col">상담내용</th>
+                                        <th scope="col">첨부</th>
+                                        <th scope="col">조회수</th>
+                                        <th scope="col">등록일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td>홍길동</td>
+                                        <td class="txt-l"><a href="#none">문의 드립니다.</a></td>
+                                        <td><i class="ico-attach"><span class="a11y">파일첨부</span></i></td>
+                                        <td>100</td>
+                                        <td>2020. 08. 26</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">2</td>
+                                        <td>홍길동</td>
+                                        <td class="txt-l"><a href="#none">문의 드립니다.</a></td>
+                                        <td><i class="ico-attach"><span class="a11y">파일첨부</span></i></td>
+                                        <td>100</td>
+                                        <td>2020. 08. 26</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">3</td>
+                                        <td>홍길동</td>
+                                        <td class="txt-l"><a href="#none">문의 드립니다.</a></td>
+                                        <td><i class="ico-attach"><span class="a11y">파일첨부</span></i></td>
+                                        <td>100</td>
+                                        <td>2020. 08. 26</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                            <div class="btn-wrap right">
+                                <button type="button" class="btn">문의하기</button>
+                            </div>
+                        </div>
+                        <div class="list-paging">
+                            <ul>
+                                <li><button type="button" class="first-btn"><<</button></li>
+                                <li><button type="button" class="prev-btn"><</button></li>
+                                <li class="active"><a href="#none">1</a></li>
+                                <li><a href="#none">2</a></li>
+                                <li><a href="#none">3</a></li>
+                                <li><a href="#none">4</a></li>
+                                <li><a href="#none">5</a></li>
+                                <li><button type="button" class="next-btn">></button></li>
+                                <li><button type="button" class="last-btn">>></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <article class=""></article>
+            </div>
+            <!-- footer -->
+            <script>
+                include.footer();
+            </script>
+        </div>
+    </body>
+</html>

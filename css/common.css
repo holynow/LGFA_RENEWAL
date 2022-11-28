@@ -73,5 +73,5 @@ caption {
 	height: 1px;
 	overflow: hidden;
 }
-
-select {border: 0; background: #fff; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+em, i {font-style: normal;}
+select {border: 0; background: #fff; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
