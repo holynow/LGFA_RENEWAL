@@ -105,6 +105,7 @@ img {width: 100%;}
 .prd-top .prd-info .input-area .opt-list {margin-top: 2em;}
 .prd-top .prd-info .input-area .opt-list .num-chk input {max-width: 6em; padding: .8em 1em; background: #eee; border-radius: 5px;}
 .prd-top .prd-info .opt-list li {display: flex; align-items: center; justify-content: flex-start; gap: 1.5em;}
+.prd-top .prd-info .opt-list li + li {margin-top: 1em;}
 .prd-top .amount {margin-top: 2em; font-size: 2rem; text-align: right; font-weight: 500;}
 .prd-top .amount.redtxt {color: #D62727;}
 .prd-detail .detail-top {margin-top: 2em; padding: 0 2em; height: 60px; background: #f7f7f7; border-radius: 10px;}
