@@ -1,18 +1,24 @@
 'use strict';
 
-// document.querySelectorAll('.accord-wrap').length > 0 ? accordEvent() : false;
-// if (document.querySelectorAll('.accord-wrap').length > 0) {
-//     const accodWrap = $('.accord-wrap');
-//     const accodReply = $('.accord-wrap .reply');
-//     const accodBtn = $('.accord-wrap .item button');
-//     const accordEvent = () => {
-//         accodBtn.on('click', function () {
-//             if ($(this).siblings().length > 0) {
-//                 $(this).siblings().slideDown();
-//             } else {
-//                 return;
-//             }
-//         });
-//     };
-//     accordEvent()
-// }
+// popup
+if ($('.layer-pop').length > 0) {
+    $('button, a').on('click', function () {
+        const targetId = $('.layer-pop').attr('id');
+        const popClose = $(this).data('close');
+        const popOpen = $(this).data('open');
+        const $dim = "<div class='dim'></div>";
+        // popup open
+        if (popOpen === targetId) {
+            $('body').prepend($dim);
+            $('#' + targetId).show();
+
+        };
+        // popup close
+        if (popClose === targetId) {
+            $('#' + targetId).hide();
+            $('.dim').remove();
+        };
+    })
+}
+
+               

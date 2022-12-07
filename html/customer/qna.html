@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/css/ui.css"/>
         <!-- include -->
         <script src="/js/include.js"></script>
+        <script>include.script()</script>
     </head>
     <body>
         <div class="wrap">
@@ -49,7 +50,7 @@
                             </div>
                         </div>
                         <div class="tb-list-wrap">
-                            <table style="width:100%;">
+                            <table>
                                 <caption>Q&A 리스트(번호, 작성자, 상ㅏ내용, 조회수, 등록일)를 나타내는 테이블입니다.</caption>
                                 <colgroup>
                                     <col width="5%">
@@ -73,7 +74,7 @@
                                     <tr>
                                         <td scope="row">1</td>
                                         <td>홍길동</td>
-                                        <td class="txt-l"><a href="#none">문의 드립니다.</a></td>
+                                        <td class="txt-l lock"><p><a href="#none" data-open="lock"> 문의 드립니다. 문의 드립니다.문의 드립니다.문의 드립니다.문의 드립니다.문의 드립니다.문의 드립니다.문의 드립니다.</a></p></td>
                                         <td><i class="ico-attach"><span class="a11y">파일첨부</span></i></td>
                                         <td>100</td>
                                         <td>2020. 08. 26</td>
@@ -81,7 +82,7 @@
                                     <tr>
                                         <td scope="row">2</td>
                                         <td>홍길동</td>
-                                        <td class="txt-l"><a href="#none">문의 드립니다.</a></td>
+                                        <td class="txt-l"><p><a href="#none">문의 드립니다.</a></p></td>
                                         <td><i class="ico-attach"><span class="a11y">파일첨부</span></i></td>
                                         <td>100</td>
                                         <td>2020. 08. 26</td>
@@ -89,7 +90,7 @@
                                     <tr>
                                         <td scope="row">3</td>
                                         <td>홍길동</td>
-                                        <td class="txt-l"><a href="#none">문의 드립니다.</a></td>
+                                        <td class="txt-l"><p><a href="#none">문의 드립니다.</a></p></td>
                                         <td><i class="ico-attach"><span class="a11y">파일첨부</span></i></td>
                                         <td>100</td>
                                         <td>2020. 08. 26</td>
@@ -97,9 +98,9 @@
                                     
                                 </tbody>
                             </table>
-                            <div class="btn-wrap right">
-                                <button type="button" class="btn">문의하기</button>
-                            </div>
+                        </div>
+                        <div class="btn-wrap right">
+                            <button type="button" class="btn">문의하기</button>
                         </div>
                         <div class="list-paging">
                             <ul>
@@ -116,9 +117,29 @@
                         </div>
                     </div>
                 </div>
-                <article class=""></article>
+                
+            </div>
+            <!-- popup -->
+            <!-- 비밀글 확인창 -->
+            <div class="layer-pop sm" id="lock">
+                <div class="pop-header">
+                    <h2 class="tit">비밀번호 확인</h2>
+                </div>
+                <div class="pop-content">
+                    <p>비공개글은 <br>비밀번호를 입력하셔야 합니다.</p>
+                    <div class="input-group">
+                        <label for="password">비밀번호</label>
+                        <input type="password" id="password">
+                    </div>
+                </div>
+                <div class="btn-wrap w100">
+                    <button type="button" class="btn-grn">보기</button>
+                    <button type="button" class="btn" data-close="lock">닫기</button>
+                </div>
+                <button type="button" class="close-btn" data-close="lock"><span class="a11y">팝업닫기</span></button>
             </div>
             <!-- footer -->
+        
             <script>
                 include.footer();
             </script>
