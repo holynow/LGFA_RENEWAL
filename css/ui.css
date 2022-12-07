@@ -102,8 +102,9 @@ img {width: 100%;}
 .prd-top .prd-info dl dt {font-size: 1.2rem; color: #999;}
 .prd-top .prd-info dl dd {flex: 1; width: 50%; text-align: right; font-size: 1.2rem; color: #222;}
 .prd-top .prd-info .input-area select {border: 1px solid #ddd;}
-.prd-top .prd-info .input-area .num-chk .num {padding: 0 1em; font-size: 2rem; font-weight: 500;}
-.prd-top .prd-info .input-area .num-chk button {padding: .5em; font-size: 2rem;}
+.prd-top .prd-info .input-area .opt-list {margin-top: 2em;}
+.prd-top .prd-info .input-area .opt-list .num-chk input {max-width: 6em; padding: .8em 1em; background: #eee; border-radius: 5px;}
+.prd-top .prd-info .opt-list li {display: flex; align-items: center; justify-content: flex-start; gap: 1.5em;}
 .prd-top .amount {margin-top: 2em; font-size: 2rem; text-align: right; font-weight: 500;}
 .prd-top .amount.redtxt {color: #D62727;}
 .prd-detail .detail-top {margin-top: 2em; padding: 0 2em; height: 60px; background: #f7f7f7; border-radius: 10px;}
