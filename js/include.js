@@ -52,7 +52,7 @@ const include = {
         document.write('</li>');
         document.write('<li>');
         document.write('<a href="/html/customer/faq.html">');
-        document.write('<img src="/img/common/ico-global-nav04.png" alt="">');
+        document.write('<img src="/img/common/ico-global-nav05.png" alt="">');
         document.write('<p>고객센터</p>');
         document.write('</a>');
         document.write('</li>');
