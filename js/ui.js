@@ -1,6 +1,19 @@
 'use strict';
 
-// popup
+// mouse enter/leave event
+const actList = $('.all-menu');
+const actTarget = $('.all-menu-list');
+function mouseEvent() {
+    actList.on('mouseenter', function () {
+        actTarget.addClass('on');
+    });
+    actList.on('mouseleave', function () {
+        actTarget.removeClass('on');
+    })
+}
+mouseEvent();
+
+
 if ($('.layer-pop').length > 0) {
     $('button, a').on('click', function () {
         const targetId = $('.layer-pop').attr('id');
