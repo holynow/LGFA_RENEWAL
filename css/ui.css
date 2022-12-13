@@ -61,6 +61,7 @@ img {width: 100%;}
 .nav-wrap .sub-nav ul li {text-align: center; border-bottom: 1px solid #ddd; border-right: 1px solid#ddd;}
 .nav-wrap .sub-nav ul li a {display: block; padding: 1em 0; font-weight: 500;}
 .nav-wrap .sub-nav ul li:hover > a {background: #eee;}
+.nav-wrap .sub-nav ul li.active > a {background: #9f9f9f; font-weight: 700; color: #fff;}
 .nav-wrap .sub-nav ul li.all-menu > a { background: #46B161; color: #fff; font-weight: 700;}
 
 /* 전체카테고리 */

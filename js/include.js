@@ -167,7 +167,7 @@ const include = {
         document.write('</div>');
         document.write('</div>');
         document.write('</li>');
-        document.write('<li>');
+        document.write('<li class="active">');
         document.write('<a href="/html/shop/category.html">저고압기기</a>');
         document.write('</li>');
         document.write('<li>');
