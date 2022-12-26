@@ -27,7 +27,7 @@ const include = {
         document.write('<div class="global-nav">');
         document.write('<ul>');
         document.write('<li>');
-        document.write('<a href="#none">');
+        document.write('<a href="/html/about/ceo.html">');
         document.write('<img src="/img/common/ico-global-nav01.png" alt="">');
         document.write('<p>회사소개</p>');
         document.write('</a>');

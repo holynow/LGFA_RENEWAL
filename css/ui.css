@@ -235,7 +235,7 @@ img {width: 100%;}
 }
 
 /* ceo */
-.ceo-greeting-wrap {padding: 10em 5em; background: url('/img/about/bg-ceo-greeting.png')no-repeat 100%; background-size: cover;}
+.ceo-greeting-wrap {padding: 12em 5em; background: url('/img/about/bg-ceo-greeting.png')no-repeat 100%; background-size: cover;}
 .ceo-greeting-wrap p.emp > span,
 .ceo-greeting-wrap p.emp {font-size: 2.3rem; font-weight: 500;}
 .ceo-greeting-wrap p {font-size: 1.5rem;}
