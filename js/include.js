@@ -206,10 +206,13 @@ const include = {
         document.write('</header>');
     },
     style: () => {
-
+        document.write('<link rel="stylesheet" href="/css/common.css"/>');
+        document.write('<link rel="stylesheet" href="/css/swiper-bundle.min.css"/>')
+        document.write('<link rel="stylesheet" href="/css/ui.css"/>');
     },
     script: () => {
-        document.write('<script src="https://code.jquery.com/jquery-3.6.1.min.js" defer></script>')
+        document.write('<script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>')
+        document.write('<script src="/js/swiper-bundle.min.js" defer></script>')
         document.write('<script src="/js/ui.js" defer></script>')
     },
     footer: () => {

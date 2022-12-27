@@ -42,5 +42,18 @@ if ($('.layer-pop').length > 0) {
         };
     })
 }
+const swiper = new Swiper('.swiper', {
+    // If we need pagination
+    autoHeight : true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
+
 
                
