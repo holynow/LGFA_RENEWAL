@@ -89,8 +89,8 @@ img {width: 100%;}
 .cate-wrap .cate-top-area .cate-link-box li {margin: 0 auto;}
 .cate-wrap .cate-list-area {margin: 3.5em 0 0;}
 .cate-list-area ul {display: grid; grid-template-columns: repeat(auto-fit, minmax(18%, auto)); gap: 2.5em 2em;}
-.cate-list-area .prd-img {height: 12em; overflow: hidden;}
-.cate-list-area .prd-img img {width: 100%;}
+.cate-list-area .prd-img {position: relative; padding-top: 70%; overflow: hidden;}
+.cate-list-area .prd-img img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; }
 .cate-list-area .prd-info {margin: 1.4em 0 0 0;}
 .cate-list-area .prd-info .prd-name {font-size: 1.1rem; font-weight: 500; word-break: break-word;}
 .cate-list-area .prd-info .cate-name {display: block; margin: .6em 0 0 0; font-size: 1rem; color: #999;}
@@ -149,7 +149,7 @@ img {width: 100%;}
 .list-detail .detail-wrap .attach-wrap {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
 .list-detail .detail-wrap .attach-wrap dl {display: flex; align-items: center;}
 .list-detail .detail-wrap .attach-wrap dt {min-width: 100px; padding: 1.5em; align-self: stretch; background: #f7f7f7; text-align: center;}
-.list-detail .detail-wrap .attach-wrap dd {padding: 1em 1.5em; background: #f7f7f7;}
+.list-detail .detail-wrap .attach-wrap dd {padding: 1em 1.5em;}
 .list-detail .detail-wrap .attach-list ul {display: flex; align-items:center; gap: .7em 1em; flex-wrap: wrap;}
 .list-detail .detail-wrap .attach-list ul a {text-decoration: underline; color: #62a1bc; font-size: .8rem;}
 .list-detail .detail-wrap .cont {padding: 2em 1.5em; border-bottom: 1px solid #ddd; color: #555; font-size: 1.1rem;}
@@ -264,7 +264,8 @@ img {width: 100%;}
 .map-wrap .contact .contact-list li {flex: 1; position: relative; padding-right: 1em; word-break: keep-all;}
 .map-wrap .contact .contact-list li + li {padding-left: 2em;}
 .map-wrap .contact .contact-list li + li::before {content:''; display: block; position: absolute; left: 0; width: 1px; height: 100%; background: #ddd;}
-.map-wrap .contact .contact-list li h4 {font-size: 1.3rem;}
+.map-wrap .contact .contact-list li h4 > span {font-size: 1.6rem; color: #46B161;}
+.map-wrap .contact .contact-list li h4 {font-size: 1.6rem;}
 .map-wrap .contact .contact-list li dl {display: flex; margin-top: 1.5em;}
 .map-wrap .contact .contact-list li dl dt {color: #999; flex: 1;}
 .map-wrap .contact .contact-list li dl dd {margin-left: 1em; flex: 4; line-height: 1.6;}

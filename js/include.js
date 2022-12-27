@@ -39,7 +39,7 @@ const include = {
         document.write('</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="#none">');
+        document.write('<a href="/html/data/price_data_room.html">');
         document.write('<img src="/img/common/ico-global-nav03.png" alt="">');
         document.write('<p>단가자료</p>');
         document.write('</a>');
