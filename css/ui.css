@@ -195,9 +195,9 @@ img {width: 100%;}
 .accord-wrap .ask .date {margin-left: auto;}
 .accord-wrap .reply .reply-cont,
 .accord-wrap .ask .accord-tit {font-size: 1.2rem; font-weight: 500; text-align: left;}
-.accord-wrap .reply {display: none; padding: 2em 1em; background: #f7f7f7;}
+.accord-wrap .reply {display: flex; gap: 1.5em; padding: 2em 1em; background: #f7f7f7;}
 .accord-wrap .reply em {color: #46B161;}
-.accord-wrap .reply .prd {color: #555; font-weight: 500; font-size: 1rem;}
+.accord-wrap .reply .prd {color: #555; font-weight: 800; font-size: 1rem;}
 .accord-wrap .reply .prd span {margin-left: 1em; font-size: 1rem; font-weight: 500;}
 .accord-wrap .reply .cont {margin-top: .6em; font-size: 1.1rem; font-weight: 400;}
 

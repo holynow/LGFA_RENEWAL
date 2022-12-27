@@ -16,7 +16,7 @@ mouseEvent();
 if ($('.accord-wrap').length > 0) {
     const accordBtn = $('.item button');
     const reply = $('.item .reply');
-    reply.slideUp();
+    reply.hide();
     accordBtn.on('click', function () {
         $(this).siblings('.reply').stop().slideToggle();
         $(this).parent().siblings().find('.reply').slideUp();
