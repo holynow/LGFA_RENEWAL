@@ -80,6 +80,7 @@ img {width: 100%;}
 .tit-wrap h1 {font-size: 2.5rem;}
 .sub-tit h2 {font-size: 1.5rem; color: #999; font-weight: 400;}
 .tit-wrap + .sub-tit {margin: 1em 0 0 0;}
+.tit-wrap .desc-wrap {margin-top: 1em;}
 
 /* category */
 .cate-tit {display: flex; align-items: center; gap: .5em;}
@@ -262,9 +263,16 @@ img {width: 100%;}
 .ceo-greeting-wrap p {font-size: 1.5rem;}
 .ceo-greeting-wrap p + p {margin-top: 2em;}
 .ceo-greeting-wrap .point-color {color: #46B161; font-size: 1.8rem; font-weight: 500;}
-.ceo-greeting-wrap .ceo-sign {margin-top: 8em; text-align: right;}
+.ceo-greeting-wrap .ceo-sign {margin-top: 6em;}
 .ceo-greeting-wrap .ceo-sign span {font-size: 1.2rem; font-weight: 700; letter-spacing: -0.025em;}
 .ceo-greeting-wrap .ceo-sign p {font-size: 2.3rem; font-weight: 700; letter-spacing: .5em;}
+.profile-wrap {margin-top: 10em;}
+.profile-wrap h4 {font-size: 2rem;}
+.profile-list {display: flex; gap: 5em; margin-top: 1em; padding: 2em; background: #f7f7f7; border-radius: 1em;}
+.profile-list dl dt {font-size: 1.4rem; font-weight: 600;}
+.profile-list dl dd {margin-top: 1em; font-size: 1.2rem;}
+.profile-list dl dd::before {content: '-'; display: inline-block; margin-right: .3em;}
+.profile-list dl dd + dd {margin-top: .5em;}
 /* history */
 .history-wrap {margin-top: 5.5em;}
 .history-wrap dl {display: flex; justify-content: center;}
@@ -295,6 +303,15 @@ img {width: 100%;}
 .map-wrap .contact .contact-list li dl + dl {margin-top: 1.6em;}
 .map-wrap .map {width: 100%;}
 .map-wrap .map .root_daum_roughmap {width: 100%; margin-top: 5em;}
+
+/* login */
+.login-wrap .tab-wrap {max-width: 700px; margin: 5em auto 0;}
+.login-wrap .login-content {margin: 2em auto 0; padding: 4em; border: 1px solid #ddd;}
+.login-wrap .input-group .input-item {display: flex; align-items: center; gap: 2em;}
+.login-wrap .input-group .input-item label {flex: 1; font-size: 1.2rem;}
+.login-wrap .input-group .input-item input {flex: 3; margin-top: 1em; width: 100%; height: 4em; border: 1px solid #ddd;}
+.login-wrap .btn-wrap {justify-content: center; padding: 0 20%; box-sizing: border-box;}
+.login-wrap .btn-wrap .btn {width: calc(100% - 2em)}
 
 /* media query */
 /* 1100px */
@@ -332,6 +349,10 @@ img {width: 100%;}
     .best-prd ul li:nth-child(4) {grid-column: 2/3;}
     .best-prd ul li:nth-child(4) .img img {top: unset; right: -3em; bottom: -3em; transform: rotate(15deg);}
     .best-prd ul li .img img {max-width: 250px!important;}
+    .profile-list {flex-wrap: wrap; gap: 3em;}
+    .profile-list dl {width: 100%;}
+    .profile-list dl + dl {padding-top: 2em; border-top: 1px solid #888;}
+    .ceo-greeting-wrap .ceo-sign p {text-align: right;}
 }
 @media (max-width: 680px) {
     .main-slide .swiper-slide .pc {display: none;}
@@ -351,7 +372,12 @@ img {width: 100%;}
     .history-wrap dl:nth-child(2) {padding: 3em 1.5em;}
     .history-wrap dl .history-detail {padding-left: 1.5em;}
     .history-wrap dl + dl {margin-top: 3em;}
-    
+    .ceo-greeting-wrap p.emp > span, .ceo-greeting-wrap p.emp {font-size: 1.8rem;}
+    .ceo-greeting-wrap p + p {font-size: 1.3rem;}
+    .ceo-greeting-wrap .ceo-sign p {font-size: 2.5rem; letter-spacing: .1em; word-break: keep-all;}
+    .ceo-greeting-wrap .ceo-sign span {margin-bottom: .5em; font-size: 1rem;}
+    .profile-wrap {margin-top: 6em;}
+    .profile-wrap h4 {font-size: 1.5rem;}
 }
 /* 500 */
 @media (max-width: 500px) {
@@ -367,7 +393,7 @@ img {width: 100%;}
     .ceo-greeting-wrap p.emp > span, .ceo-greeting-wrap p.emp {font-size: 2rem;}
     .ceo-greeting-wrap p + p {margin-top: 1.5em;}
     .ceo-greeting-wrap .point-color {font-size: 1.7rem;}
-    .ceo-greeting-wrap .ceo-sign {margin-top: 5em;}
+    .ceo-greeting-wrap .ceo-sign {margin-top: 3em;}
     .best-prd ul {grid-template-columns: repeat(1, 1fr); gap: 1em; height: 700px;}
     .best-prd ul li:nth-child(4) {grid-column: 1/1;}
 }
@@ -387,6 +413,5 @@ img {width: 100%;}
     .prd-top .amount + .btn-wrap {margin-top: 3em;}
     .download-btn-group {gap: .6em;}
     .download-btn-group a {font-size: .9rem;}
-    .ceo-greeting-wrap .ceo-sign p {font-size: 1.8rem;}
     /* .category-list ul li {width: 100%;} */
 }
