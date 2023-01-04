@@ -55,5 +55,18 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
+// tab control
+if ($('.tab-wrap').length > 0) {
+    const tabBtn = $('.tab-btn button');
+    const tabItem = $('.tab-item');
+    tabBtn.on('click', function () {
+        let inx = $(this).index();
+        tabBtn.eq(inx).siblings().removeClass('active');
+        tabItem.eq(inx).siblings().removeClass('active');
+        tabBtn.eq(inx).addClass('active');
+        tabItem.eq(inx).addClass('active');
+    })
+}
+
 
                
