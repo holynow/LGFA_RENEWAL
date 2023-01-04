@@ -315,16 +315,22 @@ img {width: 100%;}
 .login-wrap .login-content {margin: 1.5em auto 0; padding: 4em; border: 1px solid #ddd; background: #fff; box-shadow: 5px 5px 15px rgba(0,0,0,.06); border-radius: 10px;}
 .login-wrap .input-group .input-item {display: flex; align-items: center; gap: 2em;}
 .login-wrap .input-group .input-item + .input-item {margin-top: 1.5em;}
-.login-wrap .input-group .input-item label {flex: 1; font-size: 1.3rem; font-weight: 500;}
-.login-wrap .input-group .input-item input {flex: 3; padding: 1em; width: 100%; height: 3em; border: 1px solid #ddd; font-size: 1.3rem; border-radius: 3px;}
+.login-wrap .input-group .input-item label {width: 120px; font-size: 1.3rem; font-weight: 500;}
+.login-wrap .input-group .input-item input {flex: 1; padding: 1em; width: 100%; height: 3em; border: 1px solid #ddd; font-size: 1.3rem; border-radius: 3px;}
+.login-wrap .input-group .input-item .input-area {display: flex; flex: 3; gap: 1em;}
+.login-wrap .input-group .input-item .input-area input {padding: 1em;}
 .login-wrap .btn-wrap {justify-content: center; padding: 0 20%; margin-top: 3em; box-sizing: border-box;}
 .login-wrap .btn-wrap .btn {width: calc(100% - 2em); height: 60px;  background: #fff; border-radius: 5px; font-size: 1.3rem; line-height: 60px;}
-.login-wrap .btn-wrap .btn.login {background: #46B161; color: #fff;}
+.login-wrap .btn-wrap .btn {background: #46B161; color: #fff;}
 .login-wrap .link-wrap {display: flex; justify-content: center; align-items: center; gap: 1.5em; margin-top: 1.5em;}
-.login-wrap .link-wrap a {color: #555;} 
+.login-wrap .link-wrap a {position: relative; color: #777;} 
+.login-wrap .link-wrap a:hover {color: #333;}
+.login-wrap .link-wrap a:hover:after {background: #333;}
+.login-wrap .link-wrap a:after {content: ''; display: inline-block; width: 100%; height: 1px; background: #999; position: absolute; bottom: -.2em; left: 0;} 
 .login-wrap .refer-txt {margin-top: 2em;}
 .login-wrap .refer-txt p {color: #888;}
-
+.login-wrap .confirm-btn,
+.login-wrap .certify-btn {padding: 0 1em; background: #46B161; color: #fff; border: 1px solid #ddd; border-radius: 3px;}
 /* media query */
 /* 1100px */
 @media (max-width: 1100px) {
