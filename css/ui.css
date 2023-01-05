@@ -2,7 +2,7 @@
 @charset "utf-8";
 img {width: 100%;}
 .wrap {position: relative;}
-.inner-width {width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 20px;}
+.inner-width {width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 20px; overflow: hidden;}
 .inner-wrap {width: 100%; max-width: 1320px; margin: 0 auto; padding: 5em 20px 13em;}
 /* ellipsis */
 .ellipsis {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
@@ -247,9 +247,7 @@ img {width: 100%;}
 .best-prd ul li .prd-info {position: relative; z-index: 1;}
 .best-prd ul li .prd-info .name {font-size: 1.3rem; font-weight: 800;}
 .best-prd ul li .prd-info .name + span {display: block; margin-top: .5em; color: #888;}
-.sale-prd ul li .img,
 .best-prd ul li .img {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.sale-prd ul li .img img,
 .best-prd ul li .img img {position: absolute; max-width: 500px;}
 .best-prd ul li:nth-child(1) {grid-row: 1/3; grid-column: 1/2;}
 .best-prd ul li:nth-child(4) {grid-column: 2/4;}
@@ -257,15 +255,69 @@ img {width: 100%;}
 .best-prd ul li:nth-child(2) .img img {max-width: 300px; right: -3em; bottom: -3em; transform: rotate(15deg);}
 .best-prd ul li:nth-child(3) .img img {max-width: 300px; right: -3em; bottom: -3em; transform: rotate(-15deg);}
 .best-prd ul li:nth-child(4) .img img {top: 50%; right: 0; transform: translateY(-50%); max-width: 50%;}
+.sale-prd ul li:hover a em,
 .best-prd ul li:hover a em {background: #325496; color: #fff;}
 .sale-prd {padding: 8.5em 0;}
 .sale-prd .tit-wrap h4 {font-size: 2.8rem;}
 .sale-prd .tit-wrap p {margin-top: .5em; font-size: 1.4rem; color: #325496; font-weight: 700;}
-.sale-prd ul {display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.8em; margin-top: 2.8em;}
-.sale-prd ul li {background: #fff; box-shadow: 15px 15px 25px rgba(0,0,0,.1); border-radius: 10px; overflow: hidden;}
-.sale-prd ul li .img {padding-top: 50%;}
-
-
+.sale-prd ul {display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5em; margin-top: 2.8em; padding: 2em; margin: 0 -2em;}
+.sale-prd ul li a {display: block; position: relative; padding: 1em 1em 45%; background: #fff; box-shadow: 6px 6px 20px rgb(0 0 0 / 10%); border-radius: 10px; overflow: hidden;}
+.sale-prd ul li .prd-info {margin-top: 1em;}
+.sale-prd ul li .prd-info .name {font-size: 1.2rem; font-weight: 800;}
+.sale-prd ul li .prd-info .name + span {display: block; margin-top: .5em; font-size: 1rem; color: #777;}
+.sale-prd ul li .img {position: relative; overflow: hidden; padding-top: 70%;}
+.sale-prd ul li .img img {position: absolute; top: 0; left: 0;}
+.sale-prd ul li a em {position: absolute; bottom: 1.6em; right: 1em; display: inline-block; width: 7em; height: 2.7em; line-height: 2.7em; border-radius: 30px; border: 1px solid #325496; text-align: center; background: #fff; font-weight: 500; color: #325496; transition: all .2s ease-in-out;}
+.notification-area {padding: 5em 0; background: #f7f7f7;}
+.notification-area > .inner-width {display: flex; align-items: center; gap: 2em; padding: 2em 20px;}
+.notification-area .mov-wrap {flex: 1; width: 100%; max-width: 900px; height: 100%; overflow: hidden; border-radius: 10px;}
+.notification-area .mov-wrap .player {position: relative; width: 100%; height: 0; padding-bottom: 56.25%;}
+.notification-area .mov-wrap .player video {position: absolute; top: 0; left: 0; height: 100%; width: 100%;}
+.notification-area .notice-wrap {flex: 1; padding: 1.4em; width: 100%; background: #fff; border-radius: 10px; box-shadow: 5px 5px 20px rgba(0,0,0,.05); overflow: hidden;}
+.notification-area .notice-wrap .head-area {display: flex; justify-content: space-between; align-items: center;}
+.notification-area .notice-wrap .head-area .tit {position: relative; padding-left: .8em; font-size: 1.5rem; font-weight: 900;}
+.notification-area .notice-wrap .head-area .tit::before {content: ''; display: block; position: absolute; left: 0; height: 100%; width: 4px; background: #273A5F;}
+.notification-area .notice-wrap .head-area a > span {color: #325496; font-weight: 700; font-size: 1.1rem;}
+.notification-area .notice-wrap .notice-list { margin-top: 2em;}
+.notification-area .notice-wrap .notice-list li + li {margin-top: 1.2em; padding-top: 1.2em; border-top: 1px solid #ddd;}
+.notification-area .notice-wrap .notice-list li > a {display: flex; justify-content: space-between; align-items: center;}
+.notification-area .notice-wrap .notice-list li .txt {flex: 1; width: 100%; max-width: 500px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 1.2rem; font-weight: 500;}
+.notification-area .notice-wrap .notice-list li .date {display: block; text-align: right; width: 20%;}
+.comp-list-wrap {border-bottom: 1px solid #ddd;}
+.comp-list-wrap ul {display: grid; grid-template-columns: repeat(8, 1fr); align-items: center; padding: 0 2em;}
+.comp-list-wrap ul li {padding: 0 2em; max-width: 200px;}
+.bottom-area {display: flex; padding: 4em 20px; gap: 2em;}
+.bottom-area .bottom-list:nth-child(1),
+.bottom-area .bottom-list:nth-child(2) {flex: 1.5;}
+.bottom-area .bottom-list {flex: 1;}
+.bottom-area .bottom-list .tit {margin-bottom: .5em; font-size: 1.8rem; font-weight: 800;}
+.bottom-area .bottom-list .customer-list li {display: flex; gap: .5em; align-items: center; margin-top: .7em;}
+.bottom-area .bottom-list .customer-list li > span {color: #999;}
+.bottom-area .bottom-list .customer-list li > span.red-col {color: #FC461E;}
+.bottom-area .bottom-list .customer-list li > p {color: #555; font-weight: 500; font-size: 1.2rem;}
+.bottom-area .bottom-list .bank-info + .tel,
+.bottom-area .bottom-list .customer-list + .tel {margin-top: .5em; font-size: 2rem; color: #325496; font-weight: 800;}
+.bottom-area .bottom-list .img {max-width: 170px;}
+.bottom-area .bottom-list .bank-info {display: flex; gap: 2em;}
+.bottom-area .bottom-list .bank-info li {font-size: 1rem; font-weight: 800;}
+.bottom-area .bottom-list .bank-info + .tel {color: #444;}
+.bottom-area .bottom-list .link-wrap {display: grid; grid-template-columns: repeat(2, 1fr); align-items: center; height: 100%; gap: 1em;}
+.bottom-area .bottom-list .link-wrap a {display: flex; justify-content: center; align-items: center; height: 100%; padding: .5em; text-align: center; background: #eee; transition: all .2s ease-in-out; border-radius: 10px; font-weight: 800;}
+.bottom-area .bottom-list .link-wrap a > span {font-size: .8rem;}
+.bottom-area .bottom-list .link-wrap a:hover {background: #325496; color: #fff;}
+.bottom-area .bottom-list .link-wrap a:hover > span {color: #fff;}
+#footer .footer-top {padding: 1em 0; background: #172643;}
+#footer .footer-top .inner-width {padding: 0 1em;}
+#footer .footer-top a {display: inline-block; padding: 0 .5em; margin: .5em 0; color: #ddd; word-break: keep-all;}
+#footer .footer-cont { padding: 2.8em 0 4.8em; background:#273A5F;}
+#footer .footer-list li {display: flex; gap: 2em;}
+#footer .footer-list li + li {margin-top: .7em;}
+#footer .footer-list li dl {display: flex;}
+#footer .footer-list li dl dt:after {content: '|'; display: inline-block; padding: 0 1em; font-size: .5em; vertical-align: 2px;}
+#footer .footer-list li dl dt,
+#footer .footer-list li dl dd {font-size: 1.1rem; color: #fff;}
+#footer .comp-name {margin-bottom: .8em; font-size: 1.8rem; font-weight: 800; color: #fff;}
+#footer .copyright {color: #ddd; }
 /* ceo */
 .ceo-greeting-wrap {padding: 12em 5em; background: url('/img/about/bg-ceo-greeting.png')no-repeat 100%; background-size: cover;}
 .ceo-greeting-wrap p.emp > span,
@@ -355,6 +407,18 @@ img {width: 100%;}
     .prd-detail .detail-img {padding: 0;}
     .prd-top .prd-info .input-area .opt-list .opt-prd {flex-direction: column; align-items: flex-start;}
     .main .about ul {gap: 3em;}
+    .comp-list-wrap ul {overflow-x: auto;}
+    .comp-list-wrap ul li {min-width: 150px;}
+}
+@media (max-width: 900px){
+    .sale-prd ul {overflow-x: auto; padding: 2em; margin: 0 -2em;}
+    .sale-prd ul li a {min-width: 200px;}
+    .bottom-area {gap: 1em;}
+    .bottom-area .bottom-list .bank-info {flex-direction: column; gap: .2em;}
+    .bottom-area .bottom-list .tit {font-size: 1.4rem;}
+    .bottom-area .bottom-list .bank-info + .tel, .bottom-area .bottom-list .customer-list + .tel {font-size: 1.5rem;}
+    .bottom-area .bottom-list .customer-list li > p {font-size: 1rem;}
+    .bottom-area .bottom-list .link-wrap {gap: .5em;}
 }
 /* 768px */
 @media (max-width: 768px) {
@@ -381,6 +445,12 @@ img {width: 100%;}
     .profile-list dl {width: 100%;}
     .profile-list dl + dl {padding-top: 2em; border-top: 1px solid #888;}
     .ceo-greeting-wrap .ceo-sign p {text-align: right;}
+    .sale-prd {padding: 5em 0;}
+    .notification-area {padding: 2em 0;}
+    .notification-area > .inner-width {flex-direction: column;}
+    #footer .footer-list li dl dt, #footer .footer-list li dl dd {font-size: .8rem;}
+    .bottom-area .bottom-list .bank-info {flex-direction: row; gap: .8em;}
+    .bottom-area .bottom-list:nth-child(3) {display: none;}
 }
 @media (max-width: 680px) {
     .main-slide .swiper-slide .pc {display: none;}
@@ -388,6 +458,9 @@ img {width: 100%;}
     .main .about ul {flex-direction: column;}
     .category-list ul {padding: 3em 0;}
     .category-list ul li {width: calc(50% - 3em);}
+    .sale-prd {padding: 3em 0;}
+    .sale-prd .tit-wrap h4 {font-size: 2rem;}
+    .sale-prd ul li a {min-width: 200px;} 
 }
 /* 600 */
 @media (max-width: 600px) {
@@ -407,6 +480,13 @@ img {width: 100%;}
     .profile-wrap {margin-top: 6em;}
     .profile-wrap h4 {font-size: 1.5rem;}
     .login-wrap .login-content {padding: 3em 2em;}
+    .comp-list-wrap ul li {min-width: 120px;}
+    .comp-list-wrap ul {padding: 0 1em;}
+    #footer .footer-list li {flex-direction: column; gap: .5em;}
+    #footer .footer-list li dl dt, #footer .footer-list li dl dd {font-size: 1rem;}
+    .bottom-area .bottom-list .bank-info {gap: 2em;}
+    .bottom-area {flex-direction: column; gap: 2em;}
+    .bottom-area .bottom-list + .bottom-list {padding-top: 2em; border-top: 1px solid #ddd;}
 }
 /* 500 */
 @media (max-width: 500px) {
@@ -428,6 +508,9 @@ img {width: 100%;}
     .login-wrap .input-group .input-item {flex-direction: column; gap: 1em; align-items: flex-start;}
     .login-wrap .btn-wrap {padding: 0}
     .login-wrap .btn-wrap .btn {width: 100%;}
+    .comp-list-wrap ul {grid-template-columns: repeat(3, 1fr); overflow: hidden;}
+    .comp-list-wrap ul li {min-width: auto; max-width: auto; padding: 0 1em;}
+    
 }
 /* 425px */
 @media (max-width: 425px) {

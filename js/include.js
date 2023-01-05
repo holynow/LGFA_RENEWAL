@@ -216,10 +216,62 @@ const include = {
         document.write('<script src="/js/ui.js" defer></script>')
     },
     footer: () => {
-        document.write('<footer>')
-        document.write('<div>')
-        document.write('<img src="/img/dummy/main_dummy_footer.png" alt="">')
-        document.write('</div>')
-        document.write('</footer>')
+        document.write('<footer id="footer">');
+        document.write('<div class="footer-wrap">');
+        document.write('<div class="footer-top">');
+        document.write('<div class="inner-width">');
+        document.write('<a href="#">정보통신망이용촉진 및 정보보호등에 관한 법률</a>');
+        document.write('<a href="#">인터넷사이버몰표준약관</a>');
+        document.write('<a href="#">개인정보처리 방침</a>');
+        document.write('<a href="#">사이트맵</a>');
+        document.write('</div>');
+        document.write('</div>');
+        document.write('<div class="footer-cont">');
+        document.write('<div class="inner-width">');
+        document.write('<h5 class="comp-name">엘티일렉트릭(주)</h5>');
+        document.write('<ul class="footer-list">');
+        document.write('<li>');
+        document.write('<dl>');
+        document.write('<dt>주소</dt>');
+        document.write('<dd>경기도 시흥시 엠티브이 25로 20번길 13</dd>');
+        document.write('</dl>');
+        document.write('</li>');
+        document.write('<li>');
+        document.write('<dl>');
+        document.write('<dt>TEL</dt>');
+        document.write('<dd>031. 433. 9000</dd>');
+        document.write('</dl>');
+        document.write('<dl>');
+        document.write('<dt>FAX</dt>');
+        document.write('<dd>031. 433. 0908</dd>');
+        document.write('</dl>');
+        document.write('<dl>');
+        document.write('<dt>E-mail</dt>');
+        document.write('<dd>itbeco@itbeco.com</dd>');
+        document.write('</dl>');
+        document.write('</li>');
+        document.write('<li>');
+        document.write('<dl>');
+        document.write('<dt>대표</dt>');
+        document.write('<dd>김화영</dd>');
+        document.write('</dl>');
+        document.write('<dl>');
+        document.write('<dt>개인정보관리책임자</dt>');
+        document.write('<dd>김화영</dd>');
+        document.write('</dl>');
+        document.write('<dl>');
+        document.write('<dt>사업자번호</dt>');
+        document.write('<dd>134-81-49042</dd>');
+        document.write('</dl>');
+        document.write('<dl>');
+        document.write('<dt>통신판매</dt>');
+        document.write('<dd>시흥 제 609호</dd>');
+        document.write('</dl>');
+        document.write('</li>');
+        document.write('</ul>');
+        document.write('</div>');
+        document.write('</div>');
+        document.write('</div>');
+        document.write('</footer>');
     }
 };
