@@ -17,7 +17,7 @@ const include = {
         document.write('<div class="header-link">');
         document.write('<a href="/html/member/login.html">로그인</a>');
         document.write('<a href="/html/member/join.html">회원가입</a>');
-        document.write('<a href="/html/member/cart.html">장바구니</a>');
+        document.write('<a href="/html/shop/cart.html">장바구니</a>');
         document.write('<a href="#none" class="btn-round-green-h40">견적문의</a>');
         document.write('</div>');
         document.write('</div>');
@@ -167,7 +167,7 @@ const include = {
         document.write('</div>');
         document.write('</div>');
         document.write('</li>');
-        document.write('<li class="active">');
+        document.write('<li>');
         document.write('<a href="/html/shop/category.html">저고압기기</a>');
         document.write('</li>');
         document.write('<li>');

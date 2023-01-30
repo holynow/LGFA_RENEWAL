@@ -68,5 +68,9 @@ if ($('.tab-wrap').length > 0) {
     })
 }
 
-
-               
+$(window).scroll(function () {
+    let scrollY = $(this).scrollTop();
+    if (scrollY >= 80) {
+        
+    }
+})
