@@ -22,24 +22,15 @@
                             <h1>장바구니</h1>
                         </div>
                         <div class="cart-wrap">
-                            <table class="cart-tbl-list">
-                                <thead>
-                                    <tr>
-                                        <th><p>제품</p></th>
-                                        <th><p>수량</p></th>
-                                        <th><p>금액</p></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <caption>제품명 수량 금액이 표기된 테이블입니다.</caption>
-                                    <colgroup>
-                                        <col width="auto">
-                                        <col width="10%">
-                                        <col width="30%">
-                                        <col width="15%">
-                                    </colgroup>
-                                    <tr class="item">
-                                        <td class="prd">
+                            <div class="cart-tbl-list">
+                                <div class="tbl-tit">
+                                    <p>제품명</p>
+                                    <p>수량</p>
+                                    <p>가격</p>
+                                </div>
+                                <ul>
+                                    <li class="item">
+                                        <div class="prd">
                                             <div class="prd-img">
                                                 <img src="/img/dummy/dummy_prd_img.png" alt="">
                                             </div>
@@ -47,49 +38,50 @@
                                                 <span>저고압기기 / 배선용차단기(MCCB)</span>
                                                 <p>INV,SV3750IS7-4SOINVw</p>
                                             </div>
-                                        </td>
-                                        <td class="num">
+                                        </div>
+                                        <div class="num">
                                             <div class="prd-num">
                                                 <button type="button" class="minus">-</button>
                                                 <span class="result">0</span>
                                                 <button type="button" class="plus">+</button>
                                             </div>
-                                        </td>
-                                        <td class="price">
+                                        </div>
+                                        <div class="price">
                                             <p class="txt-c">전화문의 (031-433-0900)</p>
-                                        </td>
-                                        <td class="ect">
+                                        </div>
+                                        <div class="ect">
                                             <button type="button" class="remove-btn">삭제</button>
                                             <button type="button" class="remove-btn">수정</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="item">
-                                        <td class="prd">
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="prd">
                                             <div class="prd-img">
                                                 <img src="/img/dummy/dummy_prd_img.png" alt="">
                                             </div>
                                             <div class="prd-info">
                                                 <span>저고압기기 / 배선용차단기(MCCB)</span>
-                                                <p>INV,SV3750IS7-4SO</p>
+                                                <p>INV,SV3750IS7-4SOINVw</p>
                                             </div>
-                                        </td>
-                                        <td class="num">
+                                        </div>
+                                        <div class="num">
                                             <div class="prd-num">
                                                 <button type="button" class="minus">-</button>
                                                 <span class="result">0</span>
                                                 <button type="button" class="plus">+</button>
                                             </div>
-                                        </td>
-                                        <td class="price">
+                                        </div>
+                                        <div class="price">
                                             <p class="txt-c">전화문의 (031-433-0900)</p>
-                                        </td>
-                                        <td class="ect">
+                                        </div>
+                                        <div class="ect">
                                             <button type="button" class="remove-btn">삭제</button>
                                             <button type="button" class="remove-btn">수정</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                           
                             <div class="total-result">
                                 <p>총 합계</p>
                                 <p class="result">10,000,000</p>
