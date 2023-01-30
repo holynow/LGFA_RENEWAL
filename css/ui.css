@@ -450,6 +450,10 @@ img {width: 100%;}
     .bottom-area .bottom-list .bank-info + .tel, .bottom-area .bottom-list .customer-list + .tel {font-size: 1.5rem;}
     .bottom-area .bottom-list .customer-list li > p {font-size: 1rem;}
     .bottom-area .bottom-list .link-wrap {gap: .5em;}
+    .cart-wrap .cart-tbl-list .item {grid-template-columns: auto; gap: 1.5em; padding: 2em; justify-content: center;}
+    .cart-wrap .cart-tbl-list .num .prd-num {width: 60%;}
+    .cart-wrap .cart-tbl-list .tbl-tit p {display: none;}
+
 }
 /* 768px */
 @media (max-width: 768px) {
