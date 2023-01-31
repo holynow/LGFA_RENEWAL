@@ -1,15 +1,17 @@
 'use strict';
 
 // mouse enter/leave event
-const actList = $('.all-menu');
-const actTarget = $('.all-menu-list');
+const actList = $('.cate-link-box .item');
+const actTarget = $('.cate-sub-list');
+actTarget.hide();
 function mouseEvent() {
     actList.on('mouseenter', function () {
-        actTarget.addClass('on');
+        $(this).find('.cate-sub-list').show();
     });
     actList.on('mouseleave', function () {
-        actTarget.removeClass('on');
-    })
+        $(this).find('.cate-sub-list').hide();
+    });
+   
 }
 mouseEvent();
 

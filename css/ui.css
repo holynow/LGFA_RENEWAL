@@ -13,6 +13,7 @@ img {width: 100%;}
 /* padding */
 .pb-0 {padding-bottom: 0!important;}
 
+.clear::after {display: block; content: ''; clear: both;}
 /* btn */
 .btn-wrap {display: flex; align-items: center; gap: .7em; margin-top: 2em;} 
 .btn-wrap.w100 [class^="btn"] {width: 100%; font-size: 1.2rem;}
@@ -57,17 +58,19 @@ img {width: 100%;}
 /* nav */
 /* .nav-wrap {max-width: 1320px; margin: 0 auto; } */
 .nav-wrap {width: 100%; position: sticky; top: 0; left: 0;}
-.nav-wrap .global-nav ul {display: grid; grid-template-columns: repeat(5, 1fr); max-width: 1280px; padding: 2.5em 0; margin: 0 auto; transition: all .1s ease-in-out;}
+.nav-wrap .global-nav {border-bottom: 1px solid #ddd;}
+.nav-wrap .global-nav ul {display: grid; grid-template-columns: repeat(6, 1fr); max-width: 1280px; padding: 2.5em 0; margin: 0 auto; transition: all .1s ease-in-out; }
 .nav-wrap .global-nav ul li {margin: 0 auto; width: 5em; text-align: center;}
 .nav-wrap .global-nav ul li p {margin-top: .7em; font-size: 1.2rem;}
 .nav-wrap .global-nav ul li img {width: 100%;}
-.nav-wrap .sub-nav {position: relative; width: 100%; background: #fff;}
-.nav-wrap .sub-nav ul {display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, auto)); border-top: 1px solid #ddd;}
-.nav-wrap .sub-nav ul li {text-align: center; border-bottom: 1px solid #ddd; border-right: 1px solid#ddd;}
-.nav-wrap .sub-nav ul li a {display: block; padding: 1em 0; font-weight: 500;}
-.nav-wrap .sub-nav ul li:hover > a {background: #eee;}
-.nav-wrap .sub-nav ul li.active > a {background: #9f9f9f; font-weight: 700; color: #fff;}
-.nav-wrap .sub-nav ul li.all-menu > a { background: #46B161; color: #fff; font-weight: 700;}
+.main .sub-nav {position: relative; min-width: 350px; background: #fff;}
+.main .sub-nav ul {display: flex; flex-direction: column; justify-content: space-between; padding: 1em 0; height: 100%; border-top: 1px solid #ddd;}
+.main .sub-nav ul li a {display: block; padding: 1em 40px; font-weight: 500; background: url('/img/common/ico-arrow-right.png')no-repeat calc(100% - 30px); background-size: 5px;}
+.main .sub-nav ul li:hover > a {color: #46B161;}
+.main .sub-nav ul li.active > a {font-weight: 700; color: #46B161;}
+.main .sub-nav ul li.all-menu > a { background: #46B161; color: #fff; font-weight: 700;}
+.main .main-slide {display: flex;}
+
 
 /* 전체카테고리 */
 .all-menu .all-menu-list {display: none; gap: 1em; justify-content: space-evenly; width: 100%; position: absolute; top: 47px; left: 0; padding: 2.1em 4.2em 4em; background: #fff; text-align: left; border-top: 1px solid #ddd; z-index: 5;}
@@ -89,8 +92,22 @@ img {width: 100%;}
 .cate-tit h2 {font-size: 1.5rem;}
 .cate-tit span {font-size: 1rem; color: #999; vertical-align: middle; font-weight: 500;}
 .cate-wrap .cate-top-area .cate-link-box {display: grid; grid-template-columns: repeat(3, 1fr); gap: 3em 1em; width: 100%; margin: 1.4em 0 0; padding: 2.8em; border: 1px solid #ddd; border-radius: 10px;}
-.cate-wrap .cate-top-area .cate-link-box li {margin: 0 auto;}
+.cate-wrap .cate-top-area .cate-link-box li {position: relative; margin: 0 auto;}
+.cate-wrap .cate-top-area .cate-link-box .cate-sub-list {position: absolute; top: 0; left: 0; padding: 2em 1.5em; background: #fff; border: 1px solid #ddd; z-index: 10;}
+.cate-wrap .cate-top-area .cate-link-box .cate-sub-list li ~ li {padding-top: 1em;}
 .cate-wrap .cate-list-area {margin: 3.5em 0 0;}
+.prd-wrap .sub-nav,
+.cate-wrap .sub-nav {position: sticky; left: 0; top: 0; max-width: 1320px; z-index: 1000; float: left;}
+.prd-wrap .sub-nav ul,
+.cate-wrap .sub-nav ul {display: flex; flex-direction: column; justify-content: space-between; width: 300px; padding: 1em 0;}
+.prd-wrap .sub-nav ul li a,
+.cate-wrap .sub-nav ul li a {display: block; padding: 1em 40px; font-weight: 500; background: url('/img/common/ico-arrow-right.png')no-repeat calc(100% - 30px); background-size: 5px;}
+.prd-wrap .sub-nav ul li:hover > a,
+.cate-wrap .sub-nav ul li:hover > a {color: #46B161;}
+.prd-wrap .sub-nav ul li.active > a,
+.cate-wrap .sub-nav ul li.active > a {font-weight: 700; color: #46B161;}
+.prd-wrap .inner-wrap,
+.cate-wrap .inner-wrap {position: relative; max-width: 1400px; padding: 5em 20px 13em 10em; margin: 0 auto; float: left;}
 .cate-list-area ul {display: grid; grid-template-columns: repeat(auto-fit, minmax(18%, auto)); gap: 2.5em 2em;}
 .cate-list-area .prd-img {position: relative; padding-top: 70%; overflow: hidden;}
 .cate-list-area .prd-img img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; }
