@@ -59,17 +59,23 @@ img {width: 100%;}
 /* .nav-wrap {max-width: 1320px; margin: 0 auto; } */
 .nav-wrap {width: 100%; position: sticky; top: 0; left: 0;}
 .nav-wrap .global-nav {border-bottom: 1px solid #ddd;}
-.nav-wrap .global-nav ul {display: grid; grid-template-columns: repeat(6, 1fr); max-width: 1280px; padding: 2.5em 0; margin: 0 auto; transition: all .1s ease-in-out; }
-.nav-wrap .global-nav ul li {margin: 0 auto; width: 5em; text-align: center;}
+.nav-wrap .global-nav ul {display: grid; grid-template-columns: repeat(8, 1fr); max-width: 1500px; padding: 2.5em 0; margin: 0 auto; transition: all .1s ease-in-out; }
+.nav-wrap .global-nav ul li {position: relative; margin: 0 auto; padding-top: 4em; width: 100%; text-align: center;}
 .nav-wrap .global-nav ul li p {margin-top: .7em; font-size: 1.2rem;}
-.nav-wrap .global-nav ul li img {width: 100%;}
-.main .sub-nav {position: relative; min-width: 350px; background: #fff;}
-.main .sub-nav ul {display: flex; flex-direction: column; justify-content: space-between; padding: 1em 0; height: 100%; border-top: 1px solid #ddd;}
-.main .sub-nav ul li a {display: block; padding: 1em 40px; font-weight: 500; background: url('/img/common/ico-arrow-right.png')no-repeat calc(100% - 30px); background-size: 5px;}
-.main .sub-nav ul li:hover > a {color: #46B161;}
-.main .sub-nav ul li.active > a {font-weight: 700; color: #46B161;}
-.main .sub-nav ul li.all-menu > a { background: #46B161; color: #fff; font-weight: 700;}
-.main .main-slide {display: flex;}
+.nav-wrap .global-nav ul li img {position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 4em; transition: opacity .1s ease-in-out;}
+ .sub-nav {position: absolute; min-width: 250px; background: #fff; z-index: 1;}
+ .sub-nav ul {display: flex; flex-direction: column; justify-content: space-between;}
+ .sub-nav ul li a {display: block; padding: 1em 40px; font-weight: 500;}
+ .sub-nav ul li:hover {background: #46B161;}
+ .sub-nav ul li:hover > a {color: #fff;}
+ .sub-nav ul li.active > a {font-weight: 700; color: #46B161;}
+ .sub-nav ul li.all-menu > a { background: #46B161; color: #fff; font-weight: 700;}
+.main .main-slide {display: flex; margin-left: 250px; height: 509px;}
+.nav-wrap .global-nav ul li > a {padding-top: 4em;}
+.nav-wrap .global-nav ul li img:not(.on) {opacity: 1;}
+.nav-wrap .global-nav ul li .on {opacity: 0;}
+.nav-wrap .global-nav ul li:hover .on {opacity: 1;}
+.nav-wrap .global-nav ul li:hover img:not(.on) {opacity: 0;}
 
 
 /* 전체카테고리 */
@@ -91,23 +97,26 @@ img {width: 100%;}
 .cate-tit {display: flex; align-items: center; gap: .5em;}
 .cate-tit h2 {font-size: 1.5rem;}
 .cate-tit span {font-size: 1rem; color: #999; vertical-align: middle; font-weight: 500;}
-.cate-wrap .cate-top-area .cate-link-box {display: grid; grid-template-columns: repeat(3, 1fr); gap: 3em 1em; width: 100%; margin: 1.4em 0 0; padding: 2.8em; border: 1px solid #ddd; border-radius: 10px;}
+.cate-wrap .cate-top-area .cate-link-box {display: grid; grid-template-columns: repeat(3, 1fr); gap: 3em 1em; margin: 1.4em 0 0; padding: 2.8em; border: 1px solid #ddd; border-radius: 10px;}
 .cate-wrap .cate-top-area .cate-link-box li {position: relative; margin: 0 auto;}
-.cate-wrap .cate-top-area .cate-link-box .cate-sub-list {position: absolute; top: 0; left: 0; padding: 2em 1.5em; background: #fff; border: 1px solid #ddd; z-index: 10;}
+.cate-wrap .cate-top-area .cate-link-box li:hover > a,
+.cate-wrap .cate-top-area .cate-link-box li:hover > a span {color: #46B161;}
+.cate-wrap .cate-top-area .cate-link-box .cate-sub-list {position: absolute; top: -1em; left: 100%; padding: 2em 1.5em; background: #fff; border: 1px solid #ddd; z-index: 10;}
+.cate-wrap .cate-top-area .cate-link-box .cate-sub-list li {width: max-content;}
 .cate-wrap .cate-top-area .cate-link-box .cate-sub-list li ~ li {padding-top: 1em;}
 .cate-wrap .cate-list-area {margin: 3.5em 0 0;}
 .prd-wrap .sub-nav,
-.cate-wrap .sub-nav {position: sticky; left: 0; top: 0; max-width: 1320px; z-index: 1000; float: left;}
+.cate-wrap .sub-nav {position: sticky; left: 0; top: 0; max-width: 1320px; z-index: 1; float: left; height:99%; border-right: 1px solid #ddd;}
 .prd-wrap .sub-nav ul,
-.cate-wrap .sub-nav ul {display: flex; flex-direction: column; justify-content: space-between; width: 300px; padding: 1em 0;}
+.cate-wrap .sub-nav ul {display: flex; flex-direction: column; justify-content: space-between; width: 250px; }
 .prd-wrap .sub-nav ul li a,
-.cate-wrap .sub-nav ul li a {display: block; padding: 1em 40px; font-weight: 500; background: url('/img/common/ico-arrow-right.png')no-repeat calc(100% - 30px); background-size: 5px;}
+.cate-wrap .sub-nav ul li a {display: block; padding: 1em 40px; font-weight: 500;}
 .prd-wrap .sub-nav ul li:hover > a,
-.cate-wrap .sub-nav ul li:hover > a {color: #46B161;}
+.cate-wrap .sub-nav ul li:hover > a {color: #fff;}
 .prd-wrap .sub-nav ul li.active > a,
 .cate-wrap .sub-nav ul li.active > a {font-weight: 700; color: #46B161;}
 .prd-wrap .inner-wrap,
-.cate-wrap .inner-wrap {position: relative; max-width: 1400px; padding: 5em 20px 13em 10em; margin: 0 auto; float: left;}
+.cate-wrap .inner-wrap {max-width: 1500px; padding-left: 270px;}
 .cate-list-area ul {display: grid; grid-template-columns: repeat(auto-fit, minmax(18%, auto)); gap: 2.5em 2em;}
 .cate-list-area .prd-img {position: relative; padding-top: 70%; overflow: hidden;}
 .cate-list-area .prd-img img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; }
@@ -239,6 +248,8 @@ img {width: 100%;}
 /* .layer-pop .pop-close::before {content: ''; display: block; } */
 
 /* main */
+.main-slide .swiper-slide img {width: 100%; height: 509px; object-fit: cover;}
+.main-slide .swiper-slide > a {display: block; width: 100%; height: 100%;}
 .main-slide .swiper-slide .mo {display: none;}
 .main .about {padding: 4em 0; background:#EBFCF2;}
 .main .about ul {display: flex; justify-content: center; gap: 6em;}
@@ -458,6 +469,21 @@ img {width: 100%;}
     .comp-list-wrap ul {overflow-x: auto;}
     .comp-list-wrap ul li {min-width: 150px;}
 }
+/* 1000px */
+@media (max-width: 1000px) {
+    .nav-wrap .global-nav ul {gap: 2em 1em; grid-template-columns: repeat(4, 1fr);}
+    .prd-wrap .sub-nav, .cate-wrap .sub-nav {position: relative; float: unset; height: auto; border: 0;}
+    .sub-nav {position: relative; min-width: 100%;}
+    .prd-wrap .sub-nav ul, .cate-wrap .sub-nav ul,
+    .sub-nav ul {display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-columns: auto; width: 100%;}
+    .prd-wrap .sub-nav ul li, .cate-wrap .sub-nav ul li,
+    .sub-nav ul li {display: flex; justify-content: center; align-items: center; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+    .prd-wrap .sub-nav ul li a, .cate-wrap .sub-nav ul li a, .sub-nav ul li a {padding: 1em; text-align: center;}
+    .main .main-slide {margin-left: 0; height: auto;}
+    .main-slide .swiper-slide img {height: auto;}
+    .prd-wrap .inner-wrap, .cate-wrap .inner-wrap {max-width: 100%; padding-left: 20px;}
+    .cate-wrap .cate-top-area .cate-link-box {gap: 1em; padding: 1.5em;}
+}
 @media (max-width: 900px){
     .sale-prd ul {overflow-x: auto; padding: 2em; margin: 0 -2em;}
     .sale-prd ul li a {min-width: 200px;}
@@ -468,10 +494,11 @@ img {width: 100%;}
     .bottom-area .bottom-list .customer-list li > p {font-size: 1rem;}
     .bottom-area .bottom-list .link-wrap {gap: .5em;}
     .cart-wrap .cart-tbl-list .item {grid-template-columns: auto; gap: 1.5em; padding: 2em; justify-content: center;}
-    .cart-wrap .cart-tbl-list .num .prd-num {width: 60%;}
+    
     .cart-wrap .cart-tbl-list .tbl-tit p {display: none;}
 
 }
+
 /* 768px */
 @media (max-width: 768px) {
     .header .header-top .comp-logo {width: 12em;}
@@ -513,6 +540,9 @@ img {width: 100%;}
     .sale-prd {padding: 3em 0;}
     .sale-prd .tit-wrap h4 {font-size: 2rem;}
     .sale-prd ul li a {min-width: 200px;} 
+    .prd-wrap .sub-nav ul, .cate-wrap .sub-nav ul,
+    .sub-nav ul {grid-template-columns: repeat(3, 1fr);}
+    .prd-wrap .sub-nav ul li a, .cate-wrap .sub-nav ul li a, .sub-nav ul li a {padding: 1em 1em;}
 }
 /* 600 */
 @media (max-width: 600px) {
