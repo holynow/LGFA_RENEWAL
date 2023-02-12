@@ -15,6 +15,23 @@ function mouseEvent() {
 }
 mouseEvent();
 
+const allBtn = $('.all-menu');
+const allMenu = $('.all-menu-list');
+function allMenuHandler() {
+    allBtn.on('mouseenter', function () {
+        allMenu.addClass('on');
+    });
+    allBtn.siblings().on('mouseenter', function(){
+        allMenu.removeClass('on');
+    });
+    allMenu.on('mouseleave', function() {
+        allMenu.removeClass('on');
+    })
+}
+allMenuHandler();
+
+
+
 if ($('.accord-wrap').length > 0) {
     const accordBtn = $('.item button');
     const reply = $('.item .reply');
@@ -69,10 +86,3 @@ if ($('.tab-wrap').length > 0) {
         tabItem.eq(inx).addClass('active');
     })
 }
-
-$(window).scroll(function () {
-    let scrollY = $(this).scrollTop();
-    if (scrollY >= 80) {
-        
-    }
-})
