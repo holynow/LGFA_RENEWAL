@@ -79,7 +79,7 @@ const include = {
         document.write('<a href="#none">');
         document.write('<img src="/img/common/ico-nav-8.png" alt="">');
         document.write('<img src="/img/common/ico-nav-8-on.png" alt="" class="on">');
-        document.write('<p>타제품 창고단가</p>');
+        document.write('<p>타제품 참고단가</p>');
         document.write('</a>');
         document.write('</li>');
         document.write('</ul>');
