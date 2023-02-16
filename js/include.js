@@ -18,7 +18,7 @@ const include = {
         document.write('<a href="/html/member/login.html">로그인</a>');
         document.write('<a href="/html/member/join.html">회원가입</a>');
         document.write('<a href="/html/shop/cart.html">장바구니</a>');
-        document.write('<a href="#none" class="btn-round-green-h40">견적문의</a>');
+        document.write('<a href="http://shop.hinetservice.co.kr/" class="btn-round-green-h40" target="_blank">인트라넷</a>');
         document.write('</div>');
         document.write('</div>');
         document.write('</div>');
