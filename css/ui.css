@@ -21,10 +21,10 @@ img {width: 100%;}
 .btn-wrap [class^="btn"] {min-width: 9em; height: 3.5em; padding: 0 1em; line-height: 3.5em; border-radius: 3px; border: 1px solid #999; color: #555; font-size: 1.1rem;} 
 [class^="btn"] {min-width: 100px; font-weight: 500; text-align: center; transition: all .1s ease-in-out;}
 [class^="btn"][class*="round"] {border-radius: 30px;}
-[class^="btn"][class*="gry"] {background: #46B161; border: transparent; color: #fff;}
+[class^="btn"][class*="gry"] {background: #46B161!important; border: transparent; color: #fff;}
 [class^="btn"][class*="grn"] {background: #555; border: transparent; color: #fff;}
-[class^="btn"][class*="navy"] {background: #325496; border: transparent; color: #fff;}
-[class^="btn"][class*="gray"] {background: #ddd; border: transparent;}
+[class^="btn"][class*="navy"] {background: #325496!important; border: transparent; color: #fff;}
+[class^="btn"][class*="gray"] {background: #ddd!important; border: transparent;}
 [class^="btn"][class*="green"] {border: 1px solid #46B161; color: #46B161;}
 [class^="btn"][class*="green"]:hover {background: #46B161; color: #fff;}
 [class^="btn"][class*="h40"] {height: 40px; line-height: 40px;}
@@ -452,7 +452,17 @@ img {width: 100%;}
 .cart-wrap .total-result p {font-size: 1.6rem;}
 .cart-wrap .total-result .result {font-size: 2.2rem; font-weight: 800;}
 .cart-wrap +  .btn-wrap .btn {width: 15em; height: 4em; line-height: 4em;}
-
+/* 이용약관 */
+.conditions-box {margin: 2.85em auto 0; height: 28.57em; padding: 1.42em; overflow-y: scroll; border: 1px solid #ddd; background: #f7fdff;}
+.conditions-box .head-tit h3 {font-size: 1.42rem;}
+.conditions-box .sub-txt + .sub-tit,
+.conditions-box .head-tit + .sub-tit,
+.conditions-box .num-list + .sub-tit {margin-top: 1.85em;}
+.conditions-box .num-list {margin-top: 1em;}
+.conditions-box .num-list > li > ul {flex-direction: column; justify-content: flex-start; gap: .35em; margin-top: .71em;}
+.conditions-box .num-list > li > ul > li {padding: 0; border: 0; text-align: left;}
+.conditions-box .num-list + .head-tit {margin-top: 2.85em;}
+.conditions-box + .check-box {margin-top: 1.42em;}
 /* media query */
 /* 1100px */
 @media (max-width: 1100px) {
