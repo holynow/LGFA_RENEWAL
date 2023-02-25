@@ -451,9 +451,9 @@ img {width: 100%;}
 .cart-wrap .total-result {display: flex; justify-content: flex-end; align-items: flex-end; gap: 1.2em; margin: 5em 0 3em;} 
 .cart-wrap .total-result p {font-size: 1.6rem;}
 .cart-wrap .total-result .result {font-size: 2.2rem; font-weight: 800;}
-.cart-wrap +  .btn-wrap .btn {width: 15em; height: 4em; line-height: 4em;}
+.cart-wrap + .btn-wrap .btn {width: 15em; height: 4em; line-height: 4em;}
 /* 이용약관 */
-.conditions-box {margin: 2.85em auto 0; height: 28.57em; padding: 1.42em; overflow-y: scroll; border: 1px solid #ddd; background: #f7fdff;}
+.conditions-box {max-width: 1200px; margin: 2.85em auto 0; height: 28.57em; padding: 4.28em 2.85em; overflow-y: scroll; border: 1px solid #ddd; background: #f7f7f7;}
 .conditions-box .head-tit h3 {font-size: 1.42rem;}
 .conditions-box .sub-txt + .sub-tit,
 .conditions-box .head-tit + .sub-tit,

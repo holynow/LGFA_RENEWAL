@@ -30,7 +30,13 @@ function allMenuHandler() {
 }
 allMenuHandler();
 
-
+if ($('.email-form').length > 0) {
+    const emailSelect = $('.email-form select');
+    const emailInput = $('.selected-email');
+    emailSelect.on('change', function(e){
+        emailInput.val(emailSelect.val())
+    });
+}
 
 if ($('.accord-wrap').length > 0) {
     const accordBtn = $('.item button');
