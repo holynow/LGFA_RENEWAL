@@ -127,7 +127,7 @@ img {width: 100%;}
 .cate-list-area .prd-info .cate-name {display: block; margin: .6em 0 0 0; font-size: 1rem; color: #999;}
 .cate-list-area .prd-info .price {margin: .6em 0 0 0; font-weight: 500; font-size: 1.3rem;}
 .cate-list-area .prd-info .price.redtxt {color: #D62727;}
-.list-paging {margin-top: 7em;}
+.list-paging {margin-top: 7em; padding-left: 210px;}
 .list-paging ul {display: flex; justify-content: center; align-items: center; gap: .5em;}
 .list-paging ul li {text-align: center; border-radius: 50%; overflow: hidden;}
 .list-paging ul li button,
@@ -568,6 +568,7 @@ input[type='date']:valid::before {display: none;}
     .estimate-warp,
     .sale-report-wrap,
     .mypage-info {padding-left: 0;}
+    .list-paging {padding-left: 0;}
     
 @media (max-width: 900px){
     .sale-prd ul {overflow-x: auto; padding: 2em; margin: 0 -2em;}
