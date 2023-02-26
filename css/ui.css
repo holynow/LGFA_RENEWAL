@@ -22,7 +22,7 @@ img {width: 100%;}
 [class^="btn"] {min-width: 100px; font-weight: 500; text-align: center; transition: all .1s ease-in-out;}
 [class^="btn"][class*="round"] {border-radius: 30px;}
 [class^="btn"][class*="gry"] {background: #46B161!important; border: transparent; color: #fff;}
-[class^="btn"][class*="grn"] {background: #555; border: transparent; color: #fff;}
+[class^="btn"][class*="grn"] {background: #555!important; border: transparent; color: #fff;}
 [class^="btn"][class*="navy"] {background: #325496!important; border: transparent; color: #fff;}
 [class^="btn"][class*="gray"] {background: #ddd!important; border: transparent;}
 [class^="btn"][class*="green"] {border: 1px solid #46B161; color: #46B161;}
@@ -79,7 +79,7 @@ img {width: 100%;}
 
 
 /* 전체카테고리 */
-.all-menu-list {display: none; gap: 1em; justify-content: space-evenly; width: calc(100% - 210px); height: auto; position: absolute; top: 239px; left: 0; margin-left: 210px; padding: 2.1em 20px 4em; background: #fff; text-align: left; border: 1px solid #ddd; z-index: 5;}
+.all-menu-list {display: none; gap: 1em; justify-content: space-evenly; width: calc(100% - 210px); height: auto; position: absolute; top: 227px; left: 0; margin-left: 210px; padding: 2.1em 20px 4em; background: #fff; text-align: left; border: 1px solid #ddd; z-index: 5;}
 .all-menu-list.on {display: flex;}
 .all-menu-list .link-tit {margin-bottom: .7em; font-size: 1.28rem; font-weight: 700;}
 .all-menu-list .section {flex: 1;}
@@ -463,6 +463,43 @@ img {width: 100%;}
 .conditions-box .num-list > li > ul > li {padding: 0; border: 0; text-align: left;}
 .conditions-box .num-list + .head-tit {margin-top: 2.85em;}
 .conditions-box + .check-box {margin-top: 1.42em;}
+
+/* input */
+.input-form .sortation-line {width: 100%; margin: 2.85em auto; border: 1px solid #f7f7f7;}
+.input-form + .btn-wrap {margin-top: 7.14em;}
+.input-wrap .input-group {display: flex; align-items: baseline; gap: .71em;}
+.input-wrap i.ess::before {content: '*'; display: inline-block; color: red;}
+.input-wrap .input-group label {min-width: 14.3em; color: #333; font-weight: 500;}
+.input-wrap ~ .input-wrap {margin-top: 1.42em;}
+.input-wrap select {width: 100%; border-radius: 10px; height: 45px; padding: 0 12px; background-image: url('/img/common/ico-arrow-down.png'); background-repeat: no-repeat; background-position: calc(100% - 10px); background-size: 15px; }
+.input-wrap select,
+.input-wrap input[type="date"],
+.input-wrap input[type="text"],
+.input-wrap input[type="password"],
+.input-wrap input[type="number"],
+.input-wrap input[type="email"],
+.input-wrap input[type="phone"] {flex: 1; width: 100%; min-height: 3.57em; padding: .71em; border: 1px solid #ddd; border-radius: .35em;}
+.input-wrap input::placeholder {color: #ddd;}
+.input-wrap .button-form {align-self: stretch;}
+.input-wrap .button-form button {display: block; width: 100%; height: 100%; padding: 0 .71em; border: 1px solid #222; color: #222; border-radius: .35em;} 
+input[type='date']::before {content: attr(data-placeholder); width: 100%;}  input[type='date']:focus::before,
+  input[type='date']:valid::before {display: none;}
+.input-wrap .address-form {width: 100%;}
+.input-wrap .address-form .radio-form {margin-bottom: .71em;}
+.input-wrap .radio-form + .date-form {margin-left: 2.85em;}
+.input-wrap .input-btn-form,
+.input-wrap .radio-form,
+.input-wrap .date-form {display: flex; align-items: center; gap: .71em; width: 100%;}
+.input-wrap .date-form label,
+.input-wrap .radio-form label {min-width: auto!important;}
+.input-wrap .tel-form,
+.input-wrap .zip-code-wrap,
+.input-wrap .email-form {display: flex; align-items: center; gap: .71em; width: 100%;}
+.input-wrap .zip-code-wrap ~ input {margin-top: .71em;}
+.input-wrap .zip-code-wrap button {display: block; align-self: stretch; padding: 0 .71em; background: #777; color: #fff; border-radius: .35em;}
+
+.comp-check-info {padding: 2.14em; margin-bottom: 2.14em; background: #f7f7f7;}
+.comp-check-info p ~ p {margin-top: .35em;}
 /* media query */
 /* 1100px */
 @media (max-width: 1100px) {
@@ -555,6 +592,7 @@ img {width: 100%;}
     .prd-wrap .sub-nav ul, .cate-wrap .sub-nav ul,
     .sub-nav ul {grid-template-columns: repeat(3, 1fr);}
     .prd-wrap .sub-nav ul li a, .cate-wrap .sub-nav ul li a, .sub-nav ul li a {padding: 1em 1em;}
+    .input-wrap .input-group label {min-width: 8.3em;}
 }
 /* 600 */
 @media (max-width: 600px) {
@@ -581,6 +619,11 @@ img {width: 100%;}
     .bottom-area .bottom-list .bank-info {gap: 2em;}
     .bottom-area {flex-direction: column; gap: 2em;}
     .bottom-area .bottom-list + .bottom-list {padding-top: 2em; border-top: 1px solid #ddd;}
+}
+/* 530 */
+@media (max-width: 530px) {
+    .input-wrap .input-group {flex-direction: column;}
+    .input-wrap .radio-form + .date-form {margin-left: 0;}
 }
 /* 500 */
 @media (max-width: 500px) {
