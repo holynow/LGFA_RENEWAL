@@ -3,7 +3,7 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>엘티일렉트릭(주) | 장바구니</title>
+        <title>엘티일렉트릭(주) | 주문조회</title>
         <!-- include -->
         <script src="/js/include.js"></script>
         <script>include.style()</script>
@@ -165,78 +165,66 @@
                         </div>
                         <div class="inner-wrap">
                             <div class="tit-wrap txt-c">
-                                <h1>장바구니</h1>
+                                <h1>주문조회</h1>
                             </div>
-                            <div class="cart-wrap">
-                                <div class="cart-tbl-list">
-                                    <div class="tbl-tit">
-                                        <p>제품명</p>
-                                        <p>수량</p>
-                                        <p>가격</p>
-                                    </div>
-                                    <ul>
-                                        <li class="item">
-                                            <div class="prd">
-                                                <div class="prd-img">
-                                                    <img src="/img/dummy/dummy_prd_img.png" alt="">
-                                                </div>
-                                                <div class="prd-info">
-                                                    <span>저고압기기 / 배선용차단기(MCCB)</span>
-                                                    <p>INV,SV3750IS7-4SOINVw</p>
-                                                </div>
-                                            </div>
-                                            <div class="num">
-                                                <div class="prd-num">
-                                                    <button type="button" class="minus">-</button>
-                                                    <span class="result">0</span>
-                                                    <button type="button" class="plus">+</button>
+                            <p class="sub-tit txt-c">원하는 날짜를 선택하여 주문/배송 진행상황을 확인할 수 있습니다.</p>
+                            <div class="sale-report-wrap">
+                                <div class="inner-box bg-color-ee">
+                                    <form action="">
+                                        <div class="input-form">
+                                            <div class="input-wrap">
+                                                <div class="input-group">
+                                                    <div class="date-form">
+                                                        <label for="start-date">시작 일자</label>
+                                                        <input type="date" id="start-date" name="start-date">
+                                                       
+                                                    </div>
+                                                    <div class="date-form">
+                                                        <label for="end-date">종료 일자</label>
+                                                        <input type="date" id="end-date" name="end-date">
+                                                       
+                                                    </div>
+                                                    <div class="button-form">
+                                                        <button type="button" class="btn">조회하기</button>
+                                                    </div>
+                                                    
                                                 </div>
                                             </div>
-                                            <div class="price">
-                                                <p class="txt-c">전화문의 (031-433-0900)</p>
-                                            </div>
-                                            <div class="ect">
-                                                <button type="button" class="remove-btn">삭제</button>
-                                                <button type="button" class="remove-btn">수정</button>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="prd">
-                                                <div class="prd-img">
-                                                    <img src="/img/dummy/dummy_prd_img.png" alt="">
-                                                </div>
-                                                <div class="prd-info">
-                                                    <span>저고압기기 / 배선용차단기(MCCB)</span>
-                                                    <p>INV,SV3750IS7-4SOINVw</p>
-                                                </div>
-                                            </div>
-                                            <div class="num">
-                                                <div class="prd-num">
-                                                    <button type="button" class="minus">-</button>
-                                                    <span class="result">0</span>
-                                                    <button type="button" class="plus">+</button>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <p class="txt-c">전화문의 (031-433-0900)</p>
-                                            </div>
-                                            <div class="ect">
-                                                <button type="button" class="remove-btn">삭제</button>
-                                                <button type="button" class="remove-btn">수정</button>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                        
+                                    </form>
                                 </div>
-                                <div class="total-result">
-                                    <p>총 합계</p>
-                                    <p class="result">10,000,000</p>
-                                    <p>원</p>
+                                <div class="tb-list-wrap">
+                                    <!-- 조회항목 없을경우 -->
+                                    <!-- <div class="no-data">
+                                        
+                                       <p>현재 진행중인 주문건이 없습니다</p>
+                                    </div> -->
+                                    <table>
+                                        <caption>주문/배송 조회</caption>
+                                        <colgroup>
+                                           
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">날짜</th>
+                                                <th scope="col">상품명</th>
+                                                <th scope="col">주문번호/영수증</th>
+                                                <th scope="col">상태</th>
+                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="txt-c">2023.01.30</td>
+                                                <td class="txt-c"><a href="#none">EBS803c 800A 100/200/500mA</a></td>
+                                                <td class="txt-c">123152136546</td>
+                                                <td class="txt-c">배송중</td>
+                                         
+                                            
+                                        </tbody>
+                                    </table>
                                 </div>
-                            </div>
-                            <div class="btn-wrap right">
-                                <a href="#none" class="btn grn" id="printBtn">견적 출력하기</a>
-                                <a href="#none" class="btn navy">계속 쇼핑하기</a>
-                                <a href="#none" class="btn gry">결제하기</a>
                             </div>
                         </div>
                     </div>

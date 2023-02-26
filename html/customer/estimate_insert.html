@@ -3,7 +3,7 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>엘티일렉트릭(주) | 장바구니</title>
+        <title>엘티일렉트릭(주) | 견적문의</title>
         <!-- include -->
         <script src="/js/include.js"></script>
         <script>include.style()</script>
@@ -165,78 +165,111 @@
                         </div>
                         <div class="inner-wrap">
                             <div class="tit-wrap txt-c">
-                                <h1>장바구니</h1>
+                                <h1>견적문의</h1>
                             </div>
-                            <div class="cart-wrap">
-                                <div class="cart-tbl-list">
-                                    <div class="tbl-tit">
-                                        <p>제품명</p>
-                                        <p>수량</p>
-                                        <p>가격</p>
+                            <!-- <p class="sub-tit txt-c">견적요청을 원하시는 품목이 많은 경우<br> 견적문의 게시판에 파일첨부를 하셔서 견적문의를 하시면 견적서를 작성해서 보내드리도록 하겠습니다.</p> -->
+                            <div class="estimate-warp">
+                                <form action="">
+                                    <div class="input-form">
+                                        <div class="input-wrap">
+                                            <div class="input-group">
+                                                <label for="company">
+                                                    <i class="ess"><span class="a11y">필수</span></i>
+                                                    회사명
+                                                </label>
+                                                <input type="text" id="company" placeholder="회사명 입력" value="">
+                                            </div>
+                                        </div>
+                                        <div class="input-wrap">
+                                            <div class="input-group">
+                                                <label for="userName">
+                                                    <!-- 필수값에 ess 추가 -->
+                                                    <i class="ess"><span class="a11y">필수</span></i>
+                                                    담당자
+                                                </label>
+                                                <input type="text" id="userName" placeholder="담당자명 입력" value="">
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="input-wrap">
+                                            <div class="input-group">
+                                                <label for="email">
+                                                    <!-- 필수값에 ess 추가 -->
+                                                    <i class="ess"><span class="a11y">필수</span></i>
+                                                    이메일
+                                                </label>
+                                                <div class="email-form">
+                                                    <input type="text" value="littlehong">
+                                                    <span>@</span>
+                                                    <input type="text" class="selected-email" value="naver.com">
+                                                    <select name="email" id="email">
+                                                        <option value="이메일 선택">이메일 선택</option>
+                                                        <option value="naver.com" selected>네이버</option>
+                                                        <option value="hanmail.com">한메일</option>
+                                                        <option value="nate.com">네이트</option>
+                                                        <option value="gmail.com">지메일</option>
+                                                        <option value="kakao.com">카카오메일</option>
+                                                        <option value="">직접입력</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-wrap">
+                                            <div class="input-group">
+                                                <label for="tel">
+                                                    <!-- 필수값에 ess 추가 -->
+                                                    <i class="ess"><span class="a11y">필수</span></i>
+                                                    전화번호
+                                                </label>
+                                                <div class="tel-form">
+                                                    <input type="text" ><span>-</span>
+                                                    <input type="text" ><span>-</span>
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-wrap">
+                                            <div class="input-group">
+                                                <label for="fax">
+                                                    <!-- 필수값에 ess 추가 -->
+                                                    <i class="ess"><span class="a11y">필수</span></i>
+                                                    팩스번호
+                                                </label>
+                                                <div class="tel-form">
+                                                    <input type="text" ><span>-</span>
+                                                    <input type="text" ><span>-</span>
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-wrap">
+                                            <div class="input-group">
+                                                <label for="sex">
+                                                    <!-- 필수값에 ess 추가 -->
+                                                    <i class="ess"><span class="a11y">필수</span></i>
+                                                    희망 납기일
+                                                </label>
+                                                <div class="date-form">
+                                                    <label for="birthday"></label>
+                                                    <input type="date" data-placeholder="날짜 선택" required aria-required="true"></input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-wrap">
+                                            <div class="input-group">
+                                                <label for="requested">
+                                                    <!-- 필수값에 ess 추가 -->
+                                                    <i class="ess"><span class="a11y">필수</span></i>
+                                                    요청사항
+                                                </label>
+                                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <ul>
-                                        <li class="item">
-                                            <div class="prd">
-                                                <div class="prd-img">
-                                                    <img src="/img/dummy/dummy_prd_img.png" alt="">
-                                                </div>
-                                                <div class="prd-info">
-                                                    <span>저고압기기 / 배선용차단기(MCCB)</span>
-                                                    <p>INV,SV3750IS7-4SOINVw</p>
-                                                </div>
-                                            </div>
-                                            <div class="num">
-                                                <div class="prd-num">
-                                                    <button type="button" class="minus">-</button>
-                                                    <span class="result">0</span>
-                                                    <button type="button" class="plus">+</button>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <p class="txt-c">전화문의 (031-433-0900)</p>
-                                            </div>
-                                            <div class="ect">
-                                                <button type="button" class="remove-btn">삭제</button>
-                                                <button type="button" class="remove-btn">수정</button>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="prd">
-                                                <div class="prd-img">
-                                                    <img src="/img/dummy/dummy_prd_img.png" alt="">
-                                                </div>
-                                                <div class="prd-info">
-                                                    <span>저고압기기 / 배선용차단기(MCCB)</span>
-                                                    <p>INV,SV3750IS7-4SOINVw</p>
-                                                </div>
-                                            </div>
-                                            <div class="num">
-                                                <div class="prd-num">
-                                                    <button type="button" class="minus">-</button>
-                                                    <span class="result">0</span>
-                                                    <button type="button" class="plus">+</button>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <p class="txt-c">전화문의 (031-433-0900)</p>
-                                            </div>
-                                            <div class="ect">
-                                                <button type="button" class="remove-btn">삭제</button>
-                                                <button type="button" class="remove-btn">수정</button>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="total-result">
-                                    <p>총 합계</p>
-                                    <p class="result">10,000,000</p>
-                                    <p>원</p>
-                                </div>
-                            </div>
-                            <div class="btn-wrap right">
-                                <a href="#none" class="btn grn" id="printBtn">견적 출력하기</a>
-                                <a href="#none" class="btn navy">계속 쇼핑하기</a>
-                                <a href="#none" class="btn gry">결제하기</a>
+                                    <div class="btn-wrap center ">
+                                        <a href="#none" class="btn gry">견적 문의하기</a>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

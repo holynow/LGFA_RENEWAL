@@ -1,5 +1,10 @@
 'use strict';
 
+const printBtn = $('#printBtn');
+printBtn.on('click',() => {
+    window.print();
+})
+
 // mouse enter/leave event
 const actList = $('.cate-link-box .item');
 const actTarget = $('.cate-sub-list');
@@ -37,6 +42,7 @@ if ($('.email-form').length > 0) {
         emailInput.val(emailSelect.val())
     });
 }
+
 
 if ($('.accord-wrap').length > 0) {
     const accordBtn = $('.item button');

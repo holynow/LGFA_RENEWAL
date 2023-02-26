@@ -3,7 +3,7 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>엘티일렉트릭(주) | 장바구니</title>
+        <title>엘티일렉트릭(주) | 마이페이지</title>
         <!-- include -->
         <script src="/js/include.js"></script>
         <script>include.style()</script>
@@ -165,78 +165,70 @@
                         </div>
                         <div class="inner-wrap">
                             <div class="tit-wrap txt-c">
-                                <h1>장바구니</h1>
+                                <h1>마이페이지</h1>
                             </div>
-                            <div class="cart-wrap">
-                                <div class="cart-tbl-list">
-                                    <div class="tbl-tit">
-                                        <p>제품명</p>
-                                        <p>수량</p>
-                                        <p>가격</p>
-                                    </div>
+                            <ul class="tab-btn-wrap">
+                                <li>
+                                    <a href="/html/member/mypage.html">회원정보</a>
+                                </li>
+                                <li class="active">
+                                    <a href="/html/member/estimate_list.html">견적리스트</a>
+                                </li>
+                                <li>
+                                    <a href="/html/member/sale_report.html">매입원장</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#none">견적문의</a>
+                                </li> -->
+                            </ul>
+                            <div class="estimate-list-wrap">
+                                <div class="tb-list-wrap">
+                                    <table>
+                                        <caption>견적리스트 테이블</caption>
+                                        <colgroup>
+                                            <col width="15%">
+                                            <col width="15%">
+                                            <col width="10%">
+                                            <col width="auto">
+                                            <col width="15%">
+                                            <col width="15%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">견적서코드</th>
+                                                <th scope="col">요청일자</th>
+                                                <th scope="col">상태</th>
+                                                <th scope="col">품명</th>
+                                                <th scope="col">발송일자</th>
+                                                <th scope="col">견적서보기</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="txt-c">112313</td>
+                                                <td class="txt-c">2023.02.02</td>
+                                                <td class="txt-c">진행중</td>
+                                                <td class="txt-c">XBL - RMEA </td>
+                                                <td class="txt-c">2020. 08. 26</td>
+                                                <td class="txt-c">-</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="list-paging">
                                     <ul>
-                                        <li class="item">
-                                            <div class="prd">
-                                                <div class="prd-img">
-                                                    <img src="/img/dummy/dummy_prd_img.png" alt="">
-                                                </div>
-                                                <div class="prd-info">
-                                                    <span>저고압기기 / 배선용차단기(MCCB)</span>
-                                                    <p>INV,SV3750IS7-4SOINVw</p>
-                                                </div>
-                                            </div>
-                                            <div class="num">
-                                                <div class="prd-num">
-                                                    <button type="button" class="minus">-</button>
-                                                    <span class="result">0</span>
-                                                    <button type="button" class="plus">+</button>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <p class="txt-c">전화문의 (031-433-0900)</p>
-                                            </div>
-                                            <div class="ect">
-                                                <button type="button" class="remove-btn">삭제</button>
-                                                <button type="button" class="remove-btn">수정</button>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="prd">
-                                                <div class="prd-img">
-                                                    <img src="/img/dummy/dummy_prd_img.png" alt="">
-                                                </div>
-                                                <div class="prd-info">
-                                                    <span>저고압기기 / 배선용차단기(MCCB)</span>
-                                                    <p>INV,SV3750IS7-4SOINVw</p>
-                                                </div>
-                                            </div>
-                                            <div class="num">
-                                                <div class="prd-num">
-                                                    <button type="button" class="minus">-</button>
-                                                    <span class="result">0</span>
-                                                    <button type="button" class="plus">+</button>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <p class="txt-c">전화문의 (031-433-0900)</p>
-                                            </div>
-                                            <div class="ect">
-                                                <button type="button" class="remove-btn">삭제</button>
-                                                <button type="button" class="remove-btn">수정</button>
-                                            </div>
-                                        </li>
+                                        <li><button type="button" class="first-btn"><<</button></li>
+                                        <li><button type="button" class="prev-btn"><</button></li>
+                                        <li class="active"><a href="#none">1</a></li>
+                                        <li><a href="#none">2</a></li>
+                                        <li><a href="#none">3</a></li>
+                                        <li><a href="#none">4</a></li>
+                                        <li><a href="#none">5</a></li>
+                                        <li><button type="button" class="next-btn">></button></li>
+                                        <li><button type="button" class="last-btn">>></button></li>
                                     </ul>
                                 </div>
-                                <div class="total-result">
-                                    <p>총 합계</p>
-                                    <p class="result">10,000,000</p>
-                                    <p>원</p>
-                                </div>
-                            </div>
-                            <div class="btn-wrap right">
-                                <a href="#none" class="btn grn" id="printBtn">견적 출력하기</a>
-                                <a href="#none" class="btn navy">계속 쇼핑하기</a>
-                                <a href="#none" class="btn gry">결제하기</a>
                             </div>
                         </div>
                     </div>

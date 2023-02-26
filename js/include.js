@@ -15,6 +15,8 @@ const include = {
         document.write('<label for="moreBtn" class="link-more-btn"><span class=""></span></label>');
         document.write('<input type="checkbox" id="moreBtn"></input>');
         document.write('<div class="header-link">');
+        // [dev] 마이페이지는 로그인 했을경우 회원가입버튼이 숨겨지고 보여져야 합니다.
+        document.write('<a href="/html/member/mypage.html">마이페이지</a>');
         document.write('<a href="/html/member/login.html">로그인</a>');
         document.write('<a href="/html/member/join.html">회원가입</a>');
         document.write('<a href="/html/shop/cart.html">장바구니</a>');
@@ -41,14 +43,14 @@ const include = {
         document.write('</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="/html/">');
+        document.write('<a href="/html/customer/estimate_insert.html">');
         document.write('<img src="/img/common/ico-nav-0.png" alt="">');
         document.write('<img src="/img/common/ico-nav-0-on.png" alt="" class="on">');
         document.write('<p>견적문의</p>');
         document.write('</a>');
         document.write('</li>');
         document.write('<li>');
-        document.write('<a href="/html/">');
+        document.write('<a href="/html/shop/order_search.html">');
         document.write('<img src="/img/common/ico-nav-1.png" alt="">');
         document.write('<img src="/img/common/ico-nav-1-on.png" alt="" class="on">');
         document.write('<p>주문조회</p>');
@@ -103,9 +105,9 @@ const include = {
         document.write('<div class="footer-wrap">');
         document.write('<div class="footer-top">');
         document.write('<div class="inner-width">');
-        document.write('<a href="#">정보통신망이용촉진 및 정보보호등에 관한 법률</a>');
-        document.write('<a href="#">인터넷사이버몰표준약관</a>');
-        document.write('<a href="#">개인정보처리 방침</a>');
+        document.write('<a href="/html/util/policy_01.html">정보통신망이용촉진 및 정보보호등에 관한 법률</a>');
+        document.write('<a href="/html/util/policy_02.html">인터넷사이버몰표준약관</a>');
+        document.write('<a href="/html/util/policy_03.html">개인정보처리 방침</a>');
         document.write('</div>');
         document.write('</div>');
         document.write('<div class="footer-cont">');
