@@ -10,6 +10,9 @@ img {width: 100%;}
 .txt-c {text-align: center!important;}
 .txt-l {text-align: left!important;}
 
+/* font color */
+.link-color {color: #46B161;}
+
 /* padding */
 .pb-0 {padding-bottom: 0!important;}
 
@@ -61,9 +64,9 @@ img {width: 100%;}
 .nav-wrap {width: 100%; position: sticky; top: 0; left: 0;}
 .nav-wrap .global-nav {border-bottom: 1px solid #ddd;}
 .nav-wrap .global-nav ul {display: grid; grid-template-columns: repeat(8, 1fr); max-width: 1500px; padding: 2.5em 0; margin: 0 auto; transition: all .1s ease-in-out; }
-.nav-wrap .global-nav ul li {position: relative; margin: 0 auto; padding-top: 2.8em; width: 100%; text-align: center;}
-.nav-wrap .global-nav ul li p {margin-top: .7em; font-size: 1.35rem; font-weight: 500;}
-.nav-wrap .global-nav ul li img {position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 2.8em; transition: opacity .1s ease-in-out;}
+.nav-wrap .global-nav ul li {position: relative; margin: 0 auto; padding-top: 2.3em; width: 100%; text-align: center;}
+.nav-wrap .global-nav ul li p {margin-top: .7em; font-size: 1.2rem; font-weight: 500;}
+.nav-wrap .global-nav ul li img {position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 2.3em; transition: opacity .1s ease-in-out;}
  .sub-nav {position: absolute; min-width: 210px; background: #fff; z-index: 1;}
  .sub-nav ul {display: flex; flex-direction: column; justify-content: space-between;}
  .sub-nav ul li a {display: block; padding: 1em 20px 1em 40px; font-weight: 500;}
@@ -72,7 +75,7 @@ img {width: 100%;}
  .sub-nav ul li.active > a {font-weight: 700; color: #46B161;}
  .sub-nav ul li.all-menu > a { background: #46B161; color: #fff; font-weight: 700;}
 .main .main-slide {display: flex; margin-left: 210px; height: 555px;}
-.nav-wrap .global-nav ul li > a {padding-top: 2.8em;}
+.nav-wrap .global-nav ul li > a {padding-top: 2.3em;}
 .nav-wrap .global-nav ul li img:not(.on) {opacity: 1;}
 .nav-wrap .global-nav ul li .on {opacity: 0;}
 .nav-wrap .global-nav ul li:hover .on {opacity: 1;}
@@ -131,8 +134,8 @@ img {width: 100%;}
 .list-paging ul {display: flex; justify-content: center; align-items: center; gap: .5em;}
 .list-paging ul li {text-align: center; border-radius: 50%; overflow: hidden;}
 .list-paging ul li button,
-.list-paging ul li a {display: block; width: 2.5em; height: 2.5em; line-height: 2.5em; font-size: 16px; color: #999;}
-.list-paging ul li.active a {color: #fff; font-weight: 500; background: #273A5F;}
+.list-paging ul li a {display: block; width: 2.5em; height: 2.5em; line-height: 2.5em; font-size: 16px; color: #ddd;}
+.list-paging ul li.active a {color: #46B161; font-weight: 500;}
 
 /* prd detail */
 .prd-top {display: flex; gap: 10em; margin-top: 3em;}
@@ -179,7 +182,7 @@ img {width: 100%;}
 .list-detail .detail-wrap .auth-info .date {color: #999;}
 .list-detail .detail-wrap .attach-wrap {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
 .list-detail .detail-wrap .attach-wrap dl {display: flex; align-items: center;}
-.list-detail .detail-wrap .attach-wrap dt {min-width: 100px; padding: 1.5em; align-self: stretch; background: #f7f7f7; text-align: center;}
+.list-detail .detail-wrap .attach-wrap dt {min-width: 100px; padding: 1.5em; align-self: stretch; border-right: 1px solid #ddd; text-align: center;}
 .list-detail .detail-wrap .attach-wrap dd {padding: 1em 1.5em;}
 .list-detail .detail-wrap .attach-list ul {display: flex; align-items:center; gap: .7em 1em; flex-wrap: wrap;}
 .list-detail .detail-wrap .attach-list ul a {text-decoration: underline; color: #62a1bc; font-size: .8rem;}
@@ -221,7 +224,8 @@ img {width: 100%;}
 .tab-btn-wrap li.active a {background: #46B161; color: #fff;}
 
 /* accord-wrap */
-.accord-wrap {width: 100%; border-top: 2px solid #222;}
+.accord-wrap {width: 100%;}
+.accord-wrap .item:nth-child(1) {border-top: 2px solid #222;}
 .accord-wrap .item {width: 100%;}
 .accord-wrap .item ~ .item {border-top: 1px solid #ddd;}
 .accord-wrap .item button {display: block; width: 100%;}
@@ -295,12 +299,13 @@ img {width: 100%;}
 .sale-prd ul li:hover a em,
 .best-prd ul li:hover a em {background: #325496; color: #fff;}
 .sale-prd {padding: 8.5em 0;}
-.sale-prd .tit-wrap h4 {font-size: 2.8rem;}
+.sale-prd .tit-wrap h4 {font-size: 2rem;}
 .sale-prd .tit-wrap p {margin-top: .5em; font-size: 1.4rem; color: #325496; font-weight: 700;}
 .sale-prd ul {display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5em; margin-top: 2.8em; padding: 2em; margin: 0 -2em;}
-.sale-prd ul li a {display: block; position: relative; padding: 1em 1em 45%; background: #fff; box-shadow: 6px 6px 20px rgb(0 0 0 / 10%); border-radius: 10px; overflow: hidden;}
+.sale-prd ul li {max-height: 400px;}
+.sale-prd ul li a {display: block; position: relative; max-height: 400px;  padding: 1em 1em 45%; background: #fff; box-shadow: 6px 6px 20px rgb(0 0 0 / 10%); border-radius: 10px; overflow: hidden;}
 .sale-prd ul li .prd-info {margin-top: 1em;}
-.sale-prd ul li .prd-info .name {font-size: 1.2rem; font-weight: 800;}
+.sale-prd ul li .prd-info .name {min-height: 40px; overflow: hidden; font-size: 1.2rem; font-weight: 800;}
 .sale-prd ul li .prd-info .name + span {display: block; margin-top: .5em; font-size: 1rem; color: #777;}
 .sale-prd ul li .img {position: relative; overflow: hidden; padding-top: 70%;}
 .sale-prd ul li .img img {position: absolute; top: 0; left: 0;}
@@ -510,19 +515,19 @@ input[type='date']:valid::before {display: none;}
 .comp-check-info {padding: 2.14em; margin-bottom: 2.14em; background: #f7f7f7;}
 .comp-check-info p ~ p {margin-top: .35em;}
 /* mypage */
-.mypage-info {max-width: 800px; margin: 4em auto 0; padding-left: 210px;}
-.sale-report-wrap {max-width: 1350px; margin: 0 auto 0; padding-left: 210px;}
+.mypage-info {max-width: 800px; margin: 4em auto 0; }
+.sale-report-wrap {max-width: 1350px; margin: 0 auto 0;}
 .sale-report-wrap .tit-wrap {margin: 6em auto 0; }
 .sale-report-wrap .tit-wrap .tit {font-size: 1.42rem;}
 .sale-report-wrap .date-form {width: auto;}
 .sale-report-wrap .date-form + .date-form {margin-left: .71em;}
 .sale-report-wrap .inner-box {margin-top: 1.42em;}
 .sale-report-wrap .inner-box .input-group {justify-content: center;}
-.sale-report-wrap .input-wrap .button-form button {height: 50px;}
+.sale-report-wrap .input-wrap .button-form button {height: 46px;}
 .ico-exel {background: url('/img/common/ico-exel.png')no-repeat center; background-size: 3em;}
 
 /* estimate */
-.estimate-warp {max-width: 1000px; margin: 4em auto 0; padding-left: 210px;}
+.estimate-warp {max-width: 700px; margin: 4em auto 0;}
 
 /* policy */
 .policy-wrap {max-width: 1000px; margin: 2.85em auto ;}
@@ -569,6 +574,7 @@ input[type='date']:valid::before {display: none;}
     .sale-report-wrap,
     .mypage-info {padding-left: 0;}
     .list-paging {padding-left: 0;}
+    .tb-list-wrap table {width: 1000px;}
     
 @media (max-width: 900px){
     .sale-prd ul {overflow-x: auto; padding: 2em; margin: 0 -2em;}
@@ -634,20 +640,21 @@ input[type='date']:valid::before {display: none;}
 /* 600 */
 @media (max-width: 600px) {
     .tb-list-wrap {display: block; overflow-x: auto;}
-    .tb-list-wrap table {width: 800px;}
+    .tb-list-wrap table {width: 600px;}
     .tb-list-wrap table th,
-    .tb-list-wrap table td {padding: 15px 0;}
+    .tb-list-wrap table td {padding: 10px 0;}
     .ceo-greeting-wrap {padding: 5em 2em;}
     .history-wrap dl {flex-direction: column; gap: 2em;}
     .history-wrap dl:nth-child(2) {padding: 3em 1.5em;}
-    .history-wrap dl .history-detail {padding-left: 1.5em;}
+    .history-wrap dl .history-detail {padding-left: 1.2em;}
     .history-wrap dl + dl {margin-top: 3em;}
     .ceo-greeting-wrap p.emp > span, .ceo-greeting-wrap p.emp {font-size: 1.8rem;}
     .ceo-greeting-wrap p + p {font-size: 1.3rem;}
     .ceo-greeting-wrap .ceo-sign p {font-size: 2.5rem; letter-spacing: .1em; word-break: keep-all;}
     .ceo-greeting-wrap .ceo-sign span {margin-bottom: .5em; font-size: 1rem;}
-    .profile-wrap {margin-top: 6em;}
-    .profile-wrap h4 {font-size: 1.5rem;}
+    .profile-wrap {margin-top: 4em;}
+    .profile-wrap h4 {font-size: 1.3rem;}
+    .profile-list dl dt {font-size: 1rem;}
     .login-wrap .login-content {padding: 3em 2em;}
     .comp-list-wrap ul li {min-width: 120px;}
     .comp-list-wrap ul {padding: 0 1em;}
@@ -656,7 +663,52 @@ input[type='date']:valid::before {display: none;}
     .bottom-area .bottom-list .bank-info {gap: 2em;}
     .bottom-area {flex-direction: column; gap: 2em;}
     .bottom-area .bottom-list + .bottom-list {padding-top: 2em; border-top: 1px solid #ddd;}
-}
+    .accord-wrap .date {display: none;}
+    .accord-wrap .ask em {min-width: 30px; font-size: 12px;}
+    .accord-wrap .ask p {font-size: 13px;}
+    .header .header-top {height: 60px;}
+    .header .header-top .comp-logo {width: 10em;}
+    .search-wrap .search-bar {height: 40px; font-size: 13px;}
+    .header .header-menu .link-more-btn + input:checked + .header-link {top: 60px;}
+    .header .header-menu .header-link a {font-size: 12px;}
+    .header .header-menu .link-more-btn::before {width: 6px; height: 24px;}
+    .nav-wrap .global-nav ul {padding: 1.5em 1em;}
+    .nav-wrap .global-nav ul li {padding-top: 2em;}
+    .nav-wrap .global-nav ul li img {max-width: 2em;}
+    .nav-wrap .global-nav ul li p {font-size: 12px;}
+    .prd-wrap .sub-nav ul li a, .cate-wrap .sub-nav ul li a, .sub-nav ul li a {padding: .7em;}
+    .inner-wrap {padding: 3em 20px 4em;}
+    .tit-wrap h1 {font-size: 1.5em;}
+    .tit-wrap + .tab-btn-wrap {margin-top: 2em;}
+    .tab-btn-wrap li a {padding: .7em;}
+    .select-group select {height: 40px;}
+    .accord-wrap .reply .reply-cont, .accord-wrap .ask .accord-tit {font-size: 13px;}
+    .category-list ul {padding: 2em 0; gap: 2em;}
+    .category-list ul li .txt {font-size: 13px;}
+    .best-prd {padding: 2em 0 2em;}
+    .best-prd .tit-wrap .tit span, .best-prd .tit-wrap .tit {font-size: 1.5rem;}
+    .best-prd ul {margin: 2em 0;}
+    .sale-prd .tit-wrap h4 {font-size: 1.5rem;}
+    .sale-prd .tit-wrap p {font-size: 1rem;}
+    .sale-prd ul li a {min-width: 150px;}
+    .sale-prd ul li .prd-info .name {max-height: 38px; overflow: hidden;}
+    .notification-area .notice-wrap .head-area .tit {font-size: 1rem;}
+    .notification-area .notice-wrap .head-area .tit::before {width: 3px; margin-top: -1px;}
+    .notification-area .notice-wrap .notice-list li .txt {font-size: 1rem;}
+    .ceo-greeting-wrap p.emp > span, .ceo-greeting-wrap p.emp {font-size: 1.4rem; word-break: keep-all;}
+    .ceo-greeting-wrap p + p {font-size: 1rem;}
+    .ceo-greeting-wrap .ceo-sign p {font-size: 1.8rem;}
+    .map-wrap,
+    .history-wrap {margin-top: 3em;}
+    .history-wrap dl dt {font-size: 2rem;}
+    .history-wrap dl dt span {font-size: 2rem;}
+    .map-wrap .contact .contact-list li h4,
+    .map-wrap .contact .contact-list li h4 > span {font-size: 1.3rem;}
+    .tb-list-wrap table th, .tb-list-wrap table td a, .tb-list-wrap table td {font-size: 1rem;}
+    .list-detail {margin: 2em 0 0 0;}
+    .list-detail .tit {font-size: 1.2rem;}
+    .tb-list-wrap {margin-top: 2em;}
+  
 /* 530 */
 @media (max-width: 530px) {
     .input-wrap .input-group {flex-direction: column;}
@@ -675,7 +727,6 @@ input[type='date']:valid::before {display: none;}
     .tab-btn-wrap {flex-direction: column;}
     .accord-wrap .ask .accord-tit {font-size: 1rem;}
     .layer-pop {max-width: auto; width: calc(100% - 3em);}
-    .ceo-greeting-wrap p.emp > span, .ceo-greeting-wrap p.emp {font-size: 2rem;}
     .ceo-greeting-wrap p + p {margin-top: 1.5em;}
     .ceo-greeting-wrap .point-color {font-size: 1.7rem;}
     .ceo-greeting-wrap .ceo-sign {margin-top: 3em;}
@@ -690,14 +741,14 @@ input[type='date']:valid::before {display: none;}
 }
 /* 425px */
 @media (max-width: 425px) {
-    * {font-size: 13px;}
-    .inner-wrap {padding: 4em 20px 10em;}
+    * {font-size: 12px; word-break: keep-all;}
+    
     .header .header-menu .search-wrap {display: none;}
     .cate-list-area ul {grid-template-columns: repeat(auto-fit, minmax(30%, auto));}
     .list-paging {margin-top: 5em;}
     .list-paging ul li button,
     .list-paging ul li a {font-size: 13px;}
-    .tit-wrap h1 {font-size: 2rem;}
+    .tit-wrap h1 {font-size: 1.5rem;}
     .sub-tit h2 {font-size: 1.3rem; color: #999; font-weight: 400;}
     .tit-wrap + .sub-tit {margin: .8em 0 0 0;}
     .prd-top .amount {margin-top: 1em;}
