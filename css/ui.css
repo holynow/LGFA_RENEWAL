@@ -511,6 +511,7 @@ input[type='date']:valid::before {display: none;}
 .input-wrap label + .date-form {gap: 0;}
 .input-wrap .zip-code-wrap ~ input {margin-top: .71em;}
 .input-wrap .zip-code-wrap button {display: block; align-self: stretch; padding: 0 .71em; background: #777; color: #fff; border-radius: .35em;}
+input:read-only {background: #eee!important; border: 0!important;}
 
 .comp-check-info {padding: 2.14em; margin-bottom: 2.14em; background: #f7f7f7;}
 .comp-check-info p ~ p {margin-top: .35em;}
