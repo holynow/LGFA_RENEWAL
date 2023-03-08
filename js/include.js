@@ -58,7 +58,7 @@ const include = {
         document.write('</li>');
         document.write('<li>');
         document.write('<a href="/html/customer/faq.html">');
-        document.write('<img src="/img/common/ico-nav-2.png" alt="">');
+        document.write('<img src="/img/common/ico-nav-2-on.png" alt="">');
         document.write('<img src="/img/common/ico-nav-2-on.png" alt="" class="on">');
         document.write('<p>고객센터</p>');
         document.write('</a>');
