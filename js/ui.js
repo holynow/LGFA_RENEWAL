@@ -75,6 +75,10 @@ if ($('.layer-pop').length > 0) {
 }
 const swiper = new Swiper('.swiper', {
     // If we need pagination
+    autoplay: {
+        delay: 2000,
+    },
+    loop: true,
     autoHeight : true,
     pagination: {
         el: '.swiper-pagination',
