@@ -28,7 +28,7 @@ img {width: 100%;}
 [class^="btn"][class*="gry"] {background: #46B161!important; border: transparent; color: #fff;}
 [class^="btn"][class*="grn"] {background: #555!important; border: transparent; color: #fff;}
 [class^="btn"][class*="navy"] {background: #325496!important; border: transparent; color: #fff;}
-[class^="btn"][class*="gray"] {background: #ddd!important; border: transparent;}
+[class^="btn"][class*="gray"] {background: #ddd!important; border: transparent!important;}
 [class^="btn"][class*="green"] {border: 1px solid #46B161; color: #46B161;}
 [class^="btn"][class*="green"]:hover {background: #46B161; color: #fff;}
 [class^="btn"][class*="h40"] {height: 40px; line-height: 40px;}
@@ -500,6 +500,7 @@ img {width: 100%;}
 .input-wrap .input-group label {min-width: 14.3em; color: #333; font-weight: 500;}
 .input-wrap ~ .input-wrap {margin-top: 1.42em;}
 .input-wrap select {width: 100%; border-radius: 10px; height: 45px; padding: 0 12px; background-image: url('/img/common/ico-arrow-down.png'); background-repeat: no-repeat; background-position: calc(100% - 10px); background-size: 15px; }
+.input-wrap input[type="file"] {background: transparent!important;}
 .input-wrap textarea,
 .input-wrap select,
 .input-wrap input[type="date"],
@@ -575,6 +576,8 @@ input:read-only {background: #eee!important; border: 0!important;}
 .payment-info li p {padding: .5em; }
 .payment-info li:not(:nth-child(1)) {border-left: 1px solid #ddd;}
 .cart-wrap.order + .btn-wrap {margin-top: 4em;}
+.member-withdraw {display: flex; flex-direction: column; max-width: 600px;}
+.member-withdraw .sub-txt {margin-bottom: 3em; font-size: 1.1rem; text-align: center;}
 /* media query */
 /* 1100px */
 @media (max-width: 1100px) {
@@ -757,13 +760,15 @@ input:read-only {background: #eee!important; border: 0!important;}
     .list-detail {margin: 2em 0 0 0;}
     .list-detail .tit {font-size: 1.2rem;}
     .tb-list-wrap {margin-top: 2em;}
+    .sale-report-wrap .inner-box .input-group {flex-direction: column;}
+    .sale-report-wrap .date-form {width: 100%;}
+    .sale-report-wrap .date-form + .date-form {margin: 0;}
 }
 /* 530 */
 @media (max-width: 530px) {
     .input-wrap .input-group {flex-direction: column;}
     .input-wrap .radio-form + .date-form {margin-left: 0;}
-    .sale-report-wrap .date-form {width: 100%;}
-    .sale-report-wrap .date-form + .date-form {margin: 0;}
+    
 }
 /* 500 */
 @media (max-width: 500px) {

@@ -3,7 +3,7 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>엘티일렉트릭(주) | 마이페이지</title>
+        <title>엘티일렉트릭(주) | 회원탈퇴</title>
         <!-- include -->
         <script src="/js/include.js"></script>
         <script>include.style()</script>
@@ -165,111 +165,30 @@
                         </div>
                         <div class="inner-wrap">
                             <div class="tit-wrap txt-c">
-                                <h1>마이페이지</h1>
+                                <h1>회원탈퇴</h1>
                             </div>
-                            <ul class="tab-btn-wrap">
-                                <li>
-                                    <a href="/html/member/mypage.html">회원정보</a>
-                                </li>
-                                <li>
-                                    <a href="/html/member/estimate_list.html">견적리스트</a>
-                                </li>
-                                <li class="active">
-                                    <a href="/html/member/sale_report.html">매입원장</a>
-                                </li>
-                                <!-- <li>
-                                    <a href="#none">견적문의</a>
-                                </li> -->
-                            </ul>
-                            <div class="sale-report-wrap">
-                                <div class="tit-wrap">
-                                    <h4 class="tit">거래처별 매출 원장</h4>
-                                </div>
-                                <div class="inner-box bg-color-ee">
-
-                                    <form action="">
-                                        <div class="input-form">
-                                            <div class="input-wrap">
-                                                <div class="input-group">
-                                                    <div class="button-form">
-                                                        <button type="button" class="btn btn-gray">당일</button>
-                                                    </div>
-                                                    <div class="button-form">
-                                                        <button type="button" class="btn btn-gray">1개월</button>
-                                                    </div>
-                                                    <div class="button-form">
-                                                        <button type="button" class="btn btn-gray">3개월</button>
-                                                    </div>
-                                                    <div class="button-form">
-                                                        <button type="button" class="btn btn-gray">6개월</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="input-wrap">
-                                                <div class="input-group">
-                                                    <div class="date-form">
-                                                        <label for="start-date">시작 일자</label>
-                                                        <input type="date" id="start-date" name="start-date">
-                                                       
-                                                    </div>
-                                                    <div class="date-form">
-                                                        <label for="end-date">종료 일자</label>
-                                                        <input type="date" id="end-date" name="end-date">
-                                                       
-                                                    </div>
-                                                    <div class="button-form">
-                                                        <button type="button" class="btn">조회하기</button>
-                                                    </div>
-                                                    <div class="button-form">
-                                                        <button type="button" class="btn ico-exel"><span class="a11y">엑셀로 받기</span></button>
-                                                    </div>
-                                                </div>
+                            <div class="mypage-info member-withdraw">
+                                <p class="sub-txt">회원탈퇴 진행을 위해서 로그인시 사용하시는 비밀번호와 탈퇴사유를 적어주세요.</p>
+                                <form action="">
+                                    <div class="input-form">
+                                        <div class="input-wrap">
+                                            <div class="input-group">
+                                                <label for="password">비밀번호 확인</label>
+                                                <input type="text" id="password" placeholder="비밀번호를 입력하세요">
                                             </div>
                                         </div>
-                                        
-                                    </form>
-                                </div>
-                                <div class="tb-list-wrap type2">
-                                    <table>
-                                        <caption>매입원장 테이블</caption>
-                                       
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">거래일</th>
-                                                <th scope="col">품목코드</th>
-                                                <th scope="col">품목명칭/규격</th>
-                                                <th scope="col">매출수량</th>
-                                                <th scope="col">매출단가</th>
-                                                <th scope="col">매출금액</th>
-                                                <th scope="col">매출세액</th>
-                                                <th scope="col">반입수량</th>
-                                                <th scope="col">반입단가</th>
-                                                <th scope="col">반입금액</th>
-                                                <th scope="col">반입세액</th>
-                                                <th scope="col">입금액</th>
-                                                <th scope="col">잔액</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="txt-c"></td>
-                                                <td class="txt-c"></td>
-                                                <td class="txt-c">이월잔액</td>
-                                                <td class="txt-c">0.0</td>
-                                                <td class="txt-c">0.0</td>
-                                                <td class="txt-c">0.0</td>
-                                                <td class="txt-c">0.0</td>
-                                                <td class="txt-c">0.0</td>
-                                                <td class="txt-c">0.0</td>
-                                                <td class="txt-c">0.0</td>
-                                                <td class="txt-c">0.0</td>
-                                                <td class="txt-c">0.0</td>
-                                                <td class="txt-c">0.0</td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                </div>
+                                        <div class="input-wrap">
+                                            <div class="input-group">
+                                                <label for="reson">탈퇴사유</label>
+                                                <textarea id="reson" cols="30" rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrap center">
+                                        <a href="member_withdraw.html" class="btn gray">다시 입력</a>
+                                        <a href="#none" class="btn navy">확인</a>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
