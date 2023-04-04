@@ -266,7 +266,7 @@
                                                 </td>
                                                 <td class="txt-c">
                                                     <span class="order-state">결제대기</span>
-                                                    <a href="#none" class="tbl-btn">주문취소</a>
+                                                    <a href="#none" class="tbl-btn" data-open="orderCancle">주문취소</a>
                                                 </td>
                                          
                                             
@@ -283,6 +283,19 @@
             <script>
                 include.footer();
             </script>
+        </div>
+        <div class="layer-pop sm" id="orderCancle">
+            <div class="pop-header">
+                <h2 class="tit">주문취소 확인</h2>
+            </div>
+            <div class="pop-content">
+                <p>주문을 취소하시겠습니까?</p>
+            </div>
+            <div class="btn-wrap w100">
+                <button type="button" class="btn-grn">예</button>
+                <button type="button" class="btn" data-close="orderCancle">아니요</button>
+            </div>
+            <button type="button" class="close-btn" data-close="orderCancle"><span class="a11y">팝업닫기</span></button>
         </div>
     </body>
 </html>
