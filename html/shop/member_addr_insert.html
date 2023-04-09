@@ -10,67 +10,83 @@
         <script>include.script()</script>
     </head>
     <body>
-        <div style="max-width:600px">
-            <form action="">
-                <div class="input-wrap">
-                    <div class="input-group">
-                        <label for="address">배송지명</label>
-                        <input type="text" id="address">
-                    </div>
-                </div>
-                <div class="input-wrap">
-                    <div class="input-group">
-                        <label for="name">받는사람 이름</label>
-                        <input type="text" id="name">
-                    </div>
-                </div>
-                <div class="input-wrap">
-                    <div class="input-group">
-                        <label for="addressKakao">
-                       
-                        
-                            주소
-                        </label>
-                        
-                        <div class="address-form">
-                            <div class="zip-code-wrap">
-                                <input type="text" name="zipcode" id="zipcode">
-                                <button type="button" id="zipCodeBtn">우편번호</button>
-                            </div>
-                            <input type="text" id="addressKakao" name="address">
-                            <input type="text" name="addressDetail">
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="input-wrap">
-                    <div class="input-group">
-                        <label for="tel">
-                            
-                            전화번호
-                        </label>
-                        <div class="tel-form">
-                            <input type="text"><span>-</span>
-                            <input type="text"><span>-</span>
-                            <input type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="input-wrap">
-                    <div class="input-group">
-                        <label for="phone">
-                            
-                            핸드폰번호
-                        </label>
-                        <div class="tel-form">
-                            <input type="text"><span>-</span>
-                            <input type="text"><span>-</span>
-                            <input type="text">
-                        </div>
-                    </div>
-                </div>
-            </form>
+        <div class="btn-wrap">
+            <a href="#none"data-open="shippingRegi">배송지등록하기</a>
         </div>
+        <div class="layer-pop mideum" id="shippingRegi">
+            <div class="pop-header">
+                <h2 class="tit">배송지 목록</h2>
+            </div>
+            <div class="pop-content">
+                <form action="">
+                    <div class="input-wrap">
+                        <div class="input-group">
+                            <label for="address">배송지명</label>
+                            <input type="text" id="address">
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input-group">
+                            <label for="name">받는사람 이름</label>
+                            <input type="text" id="name">
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input-group">
+                            <label for="addressKakao">
+                           
+                            
+                                주소
+                            </label>
+                            
+                            <div class="address-form">
+                                <div class="zip-code-wrap">
+                                    <input type="text" name="zipcode" id="zipcode">
+                                    <button type="button" id="zipCodeBtn">우편번호</button>
+                                </div>
+                                <input type="text" id="addressKakao" name="address">
+                                <input type="text" name="addressDetail">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input-group">
+                            <label for="tel">
+                                
+                                전화번호
+                            </label>
+                            <div class="tel-form">
+                                <input type="text"><span>-</span>
+                                <input type="text"><span>-</span>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input-group">
+                            <label for="phone">
+                                
+                                핸드폰번호
+                            </label>
+                            <div class="tel-form">
+                                <input type="text"><span>-</span>
+                                <input type="text"><span>-</span>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap center">
+                        <button type="button" class="btn">취소하기</button>
+                        <button type="button" class="btn navy">
+                            등록하기
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <button type="button" class="close-btn" data-close="shippingRegi"><span class="a11y">팝업닫기</span></button>
+        </div>
+      
         <!-- script -->
         <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
         <script>
