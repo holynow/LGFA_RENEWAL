@@ -188,9 +188,30 @@
                                         </div>
                                     </div>
                                     <div class="input-wrap">
-                                        <div class="input-group">
+                                        <!-- <div class="input-group">
                                             <label for="file">첨부파일</label>
                                             <input type="file"></input>
+                                        </div> -->
+                                        <div class="input-group file-form">
+                                            <p class="form-tit">첨부파일</p>
+                                            <form method="POST" name="form1">
+                                                <input name="pid" type="hidden" value="-581980">
+                                                <input name="bid" type="hidden" value="3">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td>
+                                                            <select name="file_list" onclick="GetFile()">
+                                                            
+                                                            </select>
+                                                        </td>
+                                                        <td align="right" style='padding-right: 6px;' valign="center">
+                                                      <p><input type="button" value="파일 업로드" class="btn_simp" style='width: 80px;' onclick="OpenWindow('file_upload.jsp?bid=3&pid=-581980&mid=board', '', '570', '230')"></p>
+                                                      <p><input type="button" value="파일 삭제" class="btn_simp" style='width: 80px;' onclick="DelFile()"></p>
+                                                      <p><input type="button" value="에디터 입력" class="btn_simp" style='width: 80px;' onclick="GetFile()"></p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </form>
                                         </div>
                                     </div>
                                     <div class="input-wrap">
