@@ -17,6 +17,7 @@ img {width: 100%;}
 .pb-0 {padding-bottom: 0!important;}
 .p-1 {padding: .71em!important;}
 
+.dis-flex {display: flex; justify-content: space-between; align-items: center;}
 .clear::after {display: block; content: ''; clear: both;}
 /* btn */
 .btn-wrap {display: flex; align-items: center; gap: .7em; margin-top: 2em;} 
@@ -622,6 +623,13 @@ input:read-only {background: #eee!important; border: 0!important;}
 .winpopup,
 .shipping-list-wrap,
 .shipping-registration {padding: 2em;}
+
+.order-form {display: flex; gap: 2em; align-items: flex-start; margin-top: 1em;}
+.order-form > div {flex :1; border: 1px solid #ddd;}
+.order-form dl {display: flex; align-items: stretch;}
+.order-form dl + dl {border-top: 1px solid #ddd;}
+.order-form dl dt {min-width: 120px; background: #eee; padding: 1em;}
+.order-form dl dd {padding: 1em;}
 /* media query */
 /* 1100px */
 @media (max-width: 1100px) {

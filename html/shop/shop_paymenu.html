@@ -512,7 +512,22 @@
                 <article class=""></article>
             
             </div>
-            
+            <!-- script -->
+        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+        <script>
+        window.onload = function(){
+            $('#zipCodeBtn').on('click', function(){
+                new daum.Postcode({
+                    oncomplete: function(data) {
+                        document.getElementById('zipcode').value = data.zonecode;
+                        document.getElementById("addressKakao").value = data.address;
+                        document.querySelector("input[name=addressDetail]").focus(); 
+                    }
+                }).open();
+            })
+           
+        }
+        </script>
             <!-- footer -->
             <script>
                 include.footer();
