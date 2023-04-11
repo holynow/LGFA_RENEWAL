@@ -1,0 +1,267 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>엘티일렉트릭(주) | 회원가입</title>
+        <!-- include -->
+        <script src="/js/include.js"></script>
+        <script>include.style()</script>
+        <script>include.script()</script>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- header -->
+            <script>include.header()</script>
+            <!-- content-wrap -->
+            <div class="content-wrap">
+                <div class="content">
+                    <div class="path-wrap"></div>
+                    <div class="inner-wrap">
+                        <div class="tit-wrap txt-c">
+                            <h1>개인 회원가입</h1>
+                        </div>
+                        <p class="sub-tit txt-c">회원 가입을 하시면 제품구입과 제품에 관한 유용한 정보를 열람하실 수 있습니다.
+                        </p>
+                        <div class="login-wrap join">
+                            <form action="">
+                                <div class="input-form">
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="name">이름(한글)</label>
+                                            <input type="text" id="name" placeholder="이름 입력">
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="userId">
+                                                <!-- 필수값에 ess 추가 -->
+                                                <i class="ess"><span class="a11y">필수</span></i>
+                                                아이디(ID)
+                                            </label>
+                                            <div class="input-btn-form">
+
+                                                <input type="text" id="userId" placeholder="아이디 입력">
+                                                <div class="button-form">
+                                                    <button type="button" class="btn">아이디 중복체크</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="pw">
+                                                <!-- 필수값에 ess 추가 -->
+                                                <i class="ess"><span class="a11y">필수</span></i>
+                                                비밀번호
+                                            </label>
+                                            <input type="password" id="pw" placeholder="비밀번호 입력">
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="rePw">
+                                                <!-- 필수값에 ess 추가 -->
+                                                <i class="ess"><span class="a11y">필수</span></i>
+                                                비밀번호 확인
+                                            </label>
+                                            <input type="password" id="rePw" placeholder="비밀번호 재입력">
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="hint">
+                                                <!-- 필수값에 ess 추가 -->
+                                                <i class="ess"><span class="a11y">필수</span></i>
+                                                비밀번호 힌트
+                                            </label>
+                                            <select name="hint" id="hint">
+                                                <option value="힌트 선택">비밀번호 힌트 선택</option>
+                                                <option value="힌트 선택">아버지 성함은?</option>
+                                                <option value="힌트 선택">어머니 성함은?</option>
+                                                <option value="힌트 선택">나의 별명은?</option>
+                                                <option value="힌트 선택">나의 고향은?</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="Answer">
+                                                <!-- 필수값에 ess 추가 -->
+                                                <i class="ess"><span class="a11y">필수</span></i>
+                                                비밀번호 확인 답
+                                            </label>
+                                            <input type="text" id="Answer" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="sortation-line"></div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="email">
+                                                <!-- 필수값에 ess 추가 -->
+                                                <i class="ess"><span class="a11y">필수</span></i>
+                                                이메일
+                                            </label>
+                                            <div class="email-form">
+                                                <input type="text">
+                                                <span>@</span>
+                                                <input type="text" class="selected-email">
+                                                <select name="email" id="email">
+                                                    <option value="이메일 선택">이메일 선택</option>
+                                                    <option value="naver.com">네이버</option>
+                                                    <option value="hanmail.com">한메일</option>
+                                                    <option value="nate.com">네이트</option>
+                                                    <option value="gmail.com">지메일</option>
+                                                    <option value="kakao.com">카카오메일</option>
+                                                    <option value="">직접입력</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="addressKakao">
+                                                <!-- 필수값에 ess 추가 -->
+                                                <i class="ess"><span class="a11y">필수</span></i>
+                                                주소
+                                            </label>
+                                            
+                                            <div class="address-form">
+                                                <div class="radio-form">
+                                                    <label>
+                                                        <input type="radio" name="option" value="home" checked>
+                                                        집
+                                                    </label>
+                                                    <label>
+                                                    <input type="radio" name="option" value="office">
+                                                    회사
+                                                    </label>
+                                                </div>
+                                                <div class="zip-code-wrap">
+                                                    <input type="text" name="zipcode" id="zipcode">
+                                                    <button type="button" id="zipCodeBtn">우편번호 찾기</button>
+                                                </div>
+                                                <input type="text" id="addressKakao" name="address">
+                                                <input type="text" name="addressDetail">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="tel">
+                                                <!-- 필수값에 ess 추가 -->
+                                                <i class="ess"><span class="a11y">필수</span></i>
+                                                전화번호
+                                            </label>
+                                            <div class="tel-form">
+                                                <input type="text"><span>-</span>
+                                                <input type="text"><span>-</span>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="phone">
+                                                <!-- 필수값에 ess 추가 -->
+                                                <i class="ess"><span class="a11y">필수</span></i>
+                                                핸드폰번호
+                                            </label>
+                                            <div class="tel-form">
+                                                <input type="text"><span>-</span>
+                                                <input type="text"><span>-</span>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sortation-line"></div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="job">
+                                                <!-- 필수값에 ess 추가 -->
+                                                <i class="ess"><span class="a11y">필수</span></i>
+                                                직업
+                                            </label>
+                                            <select name="job" id="job">
+                                                <option value="">직업선택</option>
+                                                <option value="정치인">정치인</option>
+                                                <option value="회사원">회사원</option>
+                                                <option value="학생">학생</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="company">
+                                                직장명
+                                            </label>
+                                            <input type="text" id="company">
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="position">
+                                                직급/직책
+                                            </label>
+                                            <input type="text" id="position">
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <label for="sex">
+                                                <!-- 필수값에 ess 추가 -->
+                                                <i class="ess"><span class="a11y">필수</span></i>
+                                                성별 및 연령
+                                            </label>
+                                            <div class="radio-form">
+                                                <label>
+                                                    <input type="radio" name="sex" value="man" checked>
+                                                    남
+                                                </label>
+                                                
+                                                <label>
+                                                <input type="radio" name="sex" value="woman">
+                                                여
+                                                </label>
+                                            </div>
+                                            <div class="date-form">
+                                                <label for="birthday">생년월일:</label>
+                                                <input type="date" data-placeholder="날짜 선택" required aria-required="true"></input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <a href="#none" class="btn navy">등록</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <article class=""></article>
+            </div>
+            <!-- script -->
+            <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+            <script>
+            window.onload = function(){
+                $('#zipCodeBtn').on('click', function(){
+                    new daum.Postcode({
+                        oncomplete: function(data) {
+                            document.getElementById('zipcode').value = data.zonecode;
+                            document.getElementById("addressKakao").value = data.address;
+                            document.querySelector("input[name=addressDetail]").focus(); 
+                        }
+                    }).open();
+                })
+               
+            }
+            </script>
+            <!-- footer -->
+            <script>
+                include.footer();
+            </script>
+        </div>
+    </body>
+</html>

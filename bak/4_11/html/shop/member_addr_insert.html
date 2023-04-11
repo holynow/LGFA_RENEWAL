@@ -1,0 +1,91 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>엘티일렉트릭(주) | </title>
+        <!-- include -->
+        <script src="/js/include.js"></script>
+        <script>include.style()</script>
+        <script>include.script()</script>
+    </head>
+    <body>
+        <div style="max-width:600px">
+            <form action="">
+                <div class="input-wrap">
+                    <div class="input-group">
+                        <label for="address">배송지명</label>
+                        <input type="text" id="address">
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <div class="input-group">
+                        <label for="name">받는사람 이름</label>
+                        <input type="text" id="name">
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <div class="input-group">
+                        <label for="addressKakao">
+                       
+                        
+                            주소
+                        </label>
+                        
+                        <div class="address-form">
+                            <div class="zip-code-wrap">
+                                <input type="text" name="zipcode" id="zipcode">
+                                <button type="button" id="zipCodeBtn">우편번호</button>
+                            </div>
+                            <input type="text" id="addressKakao" name="address">
+                            <input type="text" name="addressDetail">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <div class="input-group">
+                        <label for="tel">
+                            
+                            전화번호
+                        </label>
+                        <div class="tel-form">
+                            <input type="text"><span>-</span>
+                            <input type="text"><span>-</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <div class="input-group">
+                        <label for="phone">
+                            
+                            핸드폰번호
+                        </label>
+                        <div class="tel-form">
+                            <input type="text"><span>-</span>
+                            <input type="text"><span>-</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- script -->
+        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+        <script>
+        window.onload = function(){
+            $('#zipCodeBtn').on('click', function(){
+                new daum.Postcode({
+                    oncomplete: function(data) {
+                        document.getElementById('zipcode').value = data.zonecode;
+                        document.getElementById("addressKakao").value = data.address;
+                        document.querySelector("input[name=addressDetail]").focus(); 
+                    }
+                }).open();
+            })
+           
+        }
+        </script>
+    </body>
+</html>

@@ -174,6 +174,22 @@
                                         <div class="input-form">
                                             <div class="input-wrap">
                                                 <div class="input-group">
+                                                    <div class="button-form">
+                                                        <button type="button" class="btn btn-gray">당일</button>
+                                                    </div>
+                                                    <div class="button-form">
+                                                        <button type="button" class="btn btn-gray">1개월</button>
+                                                    </div>
+                                                    <div class="button-form">
+                                                        <button type="button" class="btn btn-gray">3개월</button>
+                                                    </div>
+                                                    <div class="button-form">
+                                                        <button type="button" class="btn btn-gray">6개월</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-wrap">
+                                                <div class="input-group">
                                                     <div class="date-form">
                                                         <label for="start-date">시작 일자</label>
                                                         <input type="date" id="start-date" name="start-date">
@@ -194,7 +210,7 @@
                                         
                                     </form>
                                 </div>
-                                <div class="tb-list-wrap">
+                                <div class="tb-list-wrap order-search-tbl">
                                     <!-- 조회항목 없을경우 -->
                                     <!-- <div class="no-data">
                                         
@@ -203,12 +219,19 @@
                                     <table>
                                         <caption>주문/배송 조회</caption>
                                         <colgroup>
-                                           
+                                           <col width="15%">
+                                           <col width="auto">
+                                           <col width="10%">
+                                           <col width="10%">
+                                           <col width="15%">
+                                           <col width="15%">
                                         </colgroup>
                                         <thead>
                                             <tr>
                                                 <th scope="col">날짜</th>
                                                 <th scope="col">상품명</th>
+                                                <th scope="col">수량</th>
+                                                <th scope="col">금액</th>
                                                 <th scope="col">주문번호/영수증</th>
                                                 <th scope="col">상태</th>
                                                
@@ -216,10 +239,35 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="txt-c">2023.01.30</td>
-                                                <td class="txt-c"><a href="#none">EBS803c 800A 100/200/500mA</a></td>
-                                                <td class="txt-c">123152136546</td>
-                                                <td class="txt-c">배송중</td>
+                                                <td class="txt-c">
+                                                    <span class="order-date">2023.01.30</span>
+                                                    <a href="#none" class="tbl-btn">주문상세보기</a>
+                                                    <a href="#none" class="tbl-btn">출력</a>
+                                                </td>
+                                                <td class="txt-c">
+                                                    <a href="#none" class="prd-info">
+                                                        <div class="prd-img">
+                                                            <img src="/img/dummy/dummy01.png" alt="">
+                                                        </div>
+                                                        <p class="prd-name">
+                                                            제품명:<span>EBS803c 800A 100/200/500mA</span>
+                                                        </p>
+                                                    </a>
+                                                </td>
+                                                <td class="txt-c">
+                                                    <p class="num">수량:<span>1</span>개</p>
+                                                </td>
+                                                <td class="txt-c">
+                                                    <p class="price"><span>2,215,360</span>원</p>
+                                                </td>
+                                                <td class="txt-c">
+                                                    <span class="order-num">123152136546</span>
+                                                    <a href="#none" class="tbl-btn">영수증/계산서 안내</a>
+                                                </td>
+                                                <td class="txt-c">
+                                                    <span class="order-state">결제대기</span>
+                                                    <a href="#none" class="tbl-btn" data-open="orderCancle">주문취소</a>
+                                                </td>
                                          
                                             
                                         </tbody>
@@ -235,6 +283,19 @@
             <script>
                 include.footer();
             </script>
+        </div>
+        <div class="layer-pop sm" id="orderCancle">
+            <div class="pop-header">
+                <h2 class="tit">주문취소 확인</h2>
+            </div>
+            <div class="pop-content">
+                <p>주문을 취소하시겠습니까?</p>
+            </div>
+            <div class="btn-wrap w100">
+                <button type="button" class="btn-grn">예</button>
+                <button type="button" class="btn" data-close="orderCancle">아니요</button>
+            </div>
+            <button type="button" class="close-btn" data-close="orderCancle"><span class="a11y">팝업닫기</span></button>
         </div>
     </body>
 </html>
