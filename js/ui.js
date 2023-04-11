@@ -102,3 +102,37 @@ if ($('.tab-wrap').length > 0) {
         tabItem.eq(inx).addClass('active');
     })
 }
+if($('.payment-howto').length > 0) {
+    const paymentRadio = $('.payment-howto .input-group label');
+    const paymentBank = $('.payment-howto + .bank');
+    paymentRadio.on('click', function() {
+        const accountRadio = $('#account');
+        if(accountRadio.is(':checked')){
+            paymentBank.show();
+        } else {
+            paymentBank.hide();
+        }
+    })
+}
+if($('.application-info').length > 0) {
+    const radioBtn = $('.application-info input[type="radio"]')
+    const btn1 = $('#option01');
+    const btn2 = $('#option02');
+    const btn3 = $('#option03');
+    const issuanceList = $('.issuance .input-wrap');
+   
+    radioBtn.on('click', function() {
+        if(btn1.is(':checked')){
+            issuanceList.eq(0).show();
+            issuanceList.eq(1).hide();
+        } 
+        if (btn2.is(':checked')) {
+            issuanceList.eq(1).show();
+            issuanceList.eq(0).hide();
+        }
+        if (btn3.is(':checked')) {
+            issuanceList.hide();
+        }
+    })
+    
+}
