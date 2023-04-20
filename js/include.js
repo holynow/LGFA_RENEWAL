@@ -145,11 +145,11 @@ const include = {
         document.write('</dl>');
         document.write('<dl>');
         document.write('<dt>사업자번호</dt>');
-        document.write('<dd>134-81-49042</dd>');
+        document.write('<dd>155-87-02575</dd>');
         document.write('</dl>');
         document.write('<dl>');
         document.write('<dt>통신판매</dt>');
-        document.write('<dd>시흥 제 609호</dd>');
+        document.write('<dd>제 2022-경기시흥-2223 호</dd>');
         document.write('</dl>');
         document.write('</li>');
         document.write('</ul>');
